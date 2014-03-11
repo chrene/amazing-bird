@@ -1,0 +1,623 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D2EDBF118CEB94D0091C21F /* ScoreFont.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 2D2EDBEC18CEB94D0091C21F /* ScoreFont.atlas */; };
+		2D2EDBF218CEB94D0091C21F /* ScoreFont.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2D2EDBED18CEB94D0091C21F /* ScoreFont.xml */; };
+		2D2EDBF318CEB94D0091C21F /* ScoreFont@2x~ipad.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2D2EDBEE18CEB94D0091C21F /* ScoreFont@2x~ipad.xml */; };
+		2D2EDBF418CEB94D0091C21F /* ScoreFont@2x~iphone.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2D2EDBEF18CEB94D0091C21F /* ScoreFont@2x~iphone.xml */; };
+		2D2EDBF518CEB94D0091C21F /* ScoreFont~ipad.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2D2EDBF018CEB94D0091C21F /* ScoreFont~ipad.xml */; };
+		2D3B620618CE839100BFEC6A /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D3B620418CE839100BFEC6A /* Main_iPad.storyboard */; };
+		2D86D84818BBDF980053D1DC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D86D84718BBDF980053D1DC /* Foundation.framework */; };
+		2D86D84A18BBDF980053D1DC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D86D84918BBDF980053D1DC /* CoreGraphics.framework */; };
+		2D86D84C18BBDF980053D1DC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D86D84B18BBDF980053D1DC /* UIKit.framework */; };
+		2D86D84E18BBDF980053D1DC /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D86D84D18BBDF980053D1DC /* SpriteKit.framework */; };
+		2D86D85418BBDF980053D1DC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2D86D85218BBDF980053D1DC /* InfoPlist.strings */; };
+		2D86D85618BBDF980053D1DC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D86D85518BBDF980053D1DC /* main.m */; };
+		2D86D85D18BBDF980053D1DC /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D86D85B18BBDF980053D1DC /* Main_iPhone.storyboard */; };
+		2D86D86A18BBDF980053D1DC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D86D86918BBDF980053D1DC /* Images.xcassets */; };
+		2D87153218CBC3E900BD1961 /* libGoogleAdMobAds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D87153118CBC3E900BD1961 /* libGoogleAdMobAds.a */; };
+		2DC790F818C4ECE200CF44BC /* ABAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC790D318C4ECE200CF44BC /* ABAppDelegate.m */; };
+		2DC790F918C4ECE200CF44BC /* ABViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC790D518C4ECE200CF44BC /* ABViewController.m */; };
+		2DC790FA18C4ECE200CF44BC /* bird_anim.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 2DC790D718C4ECE200CF44BC /* bird_anim.atlas */; };
+		2DC790FE18C4ECE200CF44BC /* sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 2DC790DC18C4ECE200CF44BC /* sprites.atlas */; };
+		2DC790FF18C4ECE200CF44BC /* ABGameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC790DF18C4ECE200CF44BC /* ABGameScene.m */; };
+		2DC7910118C4ECE200CF44BC /* ABPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC790E318C4ECE200CF44BC /* ABPlayer.m */; };
+		2DC7910218C4ECE200CF44BC /* ABCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC790E618C4ECE200CF44BC /* ABCloud.m */; };
+		2DC7910318C4ECE200CF44BC /* ABGameCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC790E818C4ECE200CF44BC /* ABGameCharacter.m */; };
+		2DC7910518C4ECE200CF44BC /* ABNormalBird.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC790EC18C4ECE200CF44BC /* ABNormalBird.m */; };
+		2DC7910618C4ECE200CF44BC /* ABGraphicsUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC790EF18C4ECE200CF44BC /* ABGraphicsUtilities.m */; };
+		2DC7910718C4ECE200CF44BC /* BMGlyphFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC790F318C4ECE200CF44BC /* BMGlyphFont.m */; };
+		2DC7910818C4ECE200CF44BC /* BMGlyphLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC790F518C4ECE200CF44BC /* BMGlyphLabel.m */; };
+		2DC7910918C4ECE200CF44BC /* SKNode+enumerateRecursively.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC790F718C4ECE200CF44BC /* SKNode+enumerateRecursively.m */; };
+		2DC7911C18C4F9A000CF44BC /* SKAction+SKTExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC7910C18C4F9A000CF44BC /* SKAction+SKTExtras.m */; };
+		2DC7911D18C4F9A000CF44BC /* SKAction+SKTSpecialEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC7910E18C4F9A000CF44BC /* SKAction+SKTSpecialEffects.m */; };
+		2DC7911E18C4F9A000CF44BC /* SKEmitterNode+SKTExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC7911018C4F9A000CF44BC /* SKEmitterNode+SKTExtras.m */; };
+		2DC7911F18C4F9A000CF44BC /* SKNode+SKTDebugDraw.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC7911218C4F9A000CF44BC /* SKNode+SKTDebugDraw.m */; };
+		2DC7912018C4F9A000CF44BC /* SKNode+SKTExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC7911418C4F9A000CF44BC /* SKNode+SKTExtras.m */; };
+		2DC7912118C4F9A000CF44BC /* SKTAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC7911618C4F9A000CF44BC /* SKTAudio.m */; };
+		2DC7912218C4F9A000CF44BC /* SKTEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC7911818C4F9A000CF44BC /* SKTEffects.m */; };
+		2DC7912318C4F9A000CF44BC /* SKTTimingFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC7911A18C4F9A000CF44BC /* SKTTimingFunctions.m */; };
+		2DDBBF9318CB817B0077CBFD /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DDBBF9218CB817B0077CBFD /* AdSupport.framework */; };
+		2DDBBF9518CB81840077CBFD /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DDBBF9418CB81840077CBFD /* AudioToolbox.framework */; };
+		2DDBBF9718CB818B0077CBFD /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DDBBF9618CB818B0077CBFD /* AVFoundation.framework */; };
+		2DDBBF9918CB819B0077CBFD /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DDBBF9818CB819B0077CBFD /* CoreTelephony.framework */; };
+		2DDBBF9B18CB81A20077CBFD /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DDBBF9A18CB81A20077CBFD /* MessageUI.framework */; };
+		2DDBBF9D18CB81A70077CBFD /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DDBBF9C18CB81A70077CBFD /* StoreKit.framework */; };
+		2DDBBF9F18CB81AF0077CBFD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DDBBF9E18CB81AF0077CBFD /* SystemConfiguration.framework */; };
+		2DDBBFA218CBB1DA0077CBFD /* ABStarField.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DDBBFA118CBB1DA0077CBFD /* ABStarField.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2D2EDBEC18CEB94D0091C21F /* ScoreFont.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = ScoreFont.atlas; sourceTree = "<group>"; };
+		2D2EDBED18CEB94D0091C21F /* ScoreFont.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = ScoreFont.xml; sourceTree = "<group>"; };
+		2D2EDBEE18CEB94D0091C21F /* ScoreFont@2x~ipad.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "ScoreFont@2x~ipad.xml"; sourceTree = "<group>"; };
+		2D2EDBEF18CEB94D0091C21F /* ScoreFont@2x~iphone.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "ScoreFont@2x~iphone.xml"; sourceTree = "<group>"; };
+		2D2EDBF018CEB94D0091C21F /* ScoreFont~ipad.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "ScoreFont~ipad.xml"; sourceTree = "<group>"; };
+		2D3B620518CE839100BFEC6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		2D86D84418BBDF980053D1DC /* Amazing Bird.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Amazing Bird.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D86D84718BBDF980053D1DC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2D86D84918BBDF980053D1DC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2D86D84B18BBDF980053D1DC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2D86D84D18BBDF980053D1DC /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		2D86D85118BBDF980053D1DC /* Amazing Bird-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Amazing Bird-Info.plist"; sourceTree = "<group>"; };
+		2D86D85318BBDF980053D1DC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2D86D85518BBDF980053D1DC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2D86D85718BBDF980053D1DC /* Amazing Bird-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Amazing Bird-Prefix.pch"; sourceTree = "<group>"; };
+		2D86D85C18BBDF980053D1DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		2D86D86918BBDF980053D1DC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2D86D87018BBDF990053D1DC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		2D87152818CBC3E900BD1961 /* GADAdMobExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdMobExtras.h; sourceTree = "<group>"; };
+		2D87152918CBC3E900BD1961 /* GADAdNetworkExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdNetworkExtras.h; sourceTree = "<group>"; };
+		2D87152A18CBC3E900BD1961 /* GADAdSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdSize.h; sourceTree = "<group>"; };
+		2D87152B18CBC3E900BD1961 /* GADBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADBannerView.h; sourceTree = "<group>"; };
+		2D87152C18CBC3E900BD1961 /* GADBannerViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADBannerViewDelegate.h; sourceTree = "<group>"; };
+		2D87152D18CBC3E900BD1961 /* GADInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADInterstitial.h; sourceTree = "<group>"; };
+		2D87152E18CBC3E900BD1961 /* GADInterstitialDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADInterstitialDelegate.h; sourceTree = "<group>"; };
+		2D87152F18CBC3E900BD1961 /* GADRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADRequest.h; sourceTree = "<group>"; };
+		2D87153018CBC3E900BD1961 /* GADRequestError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADRequestError.h; sourceTree = "<group>"; };
+		2D87153118CBC3E900BD1961 /* libGoogleAdMobAds.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAdMobAds.a; sourceTree = "<group>"; };
+		2DC790D218C4ECE200CF44BC /* ABAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABAppDelegate.h; sourceTree = "<group>"; };
+		2DC790D318C4ECE200CF44BC /* ABAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABAppDelegate.m; sourceTree = "<group>"; };
+		2DC790D418C4ECE200CF44BC /* ABViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABViewController.h; sourceTree = "<group>"; };
+		2DC790D518C4ECE200CF44BC /* ABViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABViewController.m; sourceTree = "<group>"; };
+		2DC790D718C4ECE200CF44BC /* bird_anim.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = bird_anim.atlas; sourceTree = "<group>"; };
+		2DC790DC18C4ECE200CF44BC /* sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = sprites.atlas; sourceTree = "<group>"; };
+		2DC790DE18C4ECE200CF44BC /* ABGameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABGameScene.h; sourceTree = "<group>"; };
+		2DC790DF18C4ECE200CF44BC /* ABGameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABGameScene.m; sourceTree = "<group>"; };
+		2DC790E218C4ECE200CF44BC /* ABPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABPlayer.h; sourceTree = "<group>"; };
+		2DC790E318C4ECE200CF44BC /* ABPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABPlayer.m; sourceTree = "<group>"; };
+		2DC790E518C4ECE200CF44BC /* ABCloud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABCloud.h; sourceTree = "<group>"; };
+		2DC790E618C4ECE200CF44BC /* ABCloud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABCloud.m; sourceTree = "<group>"; };
+		2DC790E718C4ECE200CF44BC /* ABGameCharacter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABGameCharacter.h; sourceTree = "<group>"; };
+		2DC790E818C4ECE200CF44BC /* ABGameCharacter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABGameCharacter.m; sourceTree = "<group>"; };
+		2DC790EB18C4ECE200CF44BC /* ABNormalBird.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABNormalBird.h; sourceTree = "<group>"; };
+		2DC790EC18C4ECE200CF44BC /* ABNormalBird.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABNormalBird.m; sourceTree = "<group>"; };
+		2DC790EE18C4ECE200CF44BC /* ABGraphicsUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABGraphicsUtilities.h; sourceTree = "<group>"; };
+		2DC790EF18C4ECE200CF44BC /* ABGraphicsUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABGraphicsUtilities.m; sourceTree = "<group>"; };
+		2DC790F018C4ECE200CF44BC /* ABRandom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABRandom.h; sourceTree = "<group>"; };
+		2DC790F218C4ECE200CF44BC /* BMGlyphFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMGlyphFont.h; sourceTree = "<group>"; };
+		2DC790F318C4ECE200CF44BC /* BMGlyphFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMGlyphFont.m; sourceTree = "<group>"; };
+		2DC790F418C4ECE200CF44BC /* BMGlyphLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMGlyphLabel.h; sourceTree = "<group>"; };
+		2DC790F518C4ECE200CF44BC /* BMGlyphLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMGlyphLabel.m; sourceTree = "<group>"; };
+		2DC790F618C4ECE200CF44BC /* SKNode+enumerateRecursively.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKNode+enumerateRecursively.h"; sourceTree = "<group>"; };
+		2DC790F718C4ECE200CF44BC /* SKNode+enumerateRecursively.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKNode+enumerateRecursively.m"; sourceTree = "<group>"; };
+		2DC7910B18C4F9A000CF44BC /* SKAction+SKTExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKAction+SKTExtras.h"; sourceTree = "<group>"; };
+		2DC7910C18C4F9A000CF44BC /* SKAction+SKTExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKAction+SKTExtras.m"; sourceTree = "<group>"; };
+		2DC7910D18C4F9A000CF44BC /* SKAction+SKTSpecialEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKAction+SKTSpecialEffects.h"; sourceTree = "<group>"; };
+		2DC7910E18C4F9A000CF44BC /* SKAction+SKTSpecialEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKAction+SKTSpecialEffects.m"; sourceTree = "<group>"; };
+		2DC7910F18C4F9A000CF44BC /* SKEmitterNode+SKTExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKEmitterNode+SKTExtras.h"; sourceTree = "<group>"; };
+		2DC7911018C4F9A000CF44BC /* SKEmitterNode+SKTExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKEmitterNode+SKTExtras.m"; sourceTree = "<group>"; };
+		2DC7911118C4F9A000CF44BC /* SKNode+SKTDebugDraw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKNode+SKTDebugDraw.h"; sourceTree = "<group>"; };
+		2DC7911218C4F9A000CF44BC /* SKNode+SKTDebugDraw.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKNode+SKTDebugDraw.m"; sourceTree = "<group>"; };
+		2DC7911318C4F9A000CF44BC /* SKNode+SKTExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKNode+SKTExtras.h"; sourceTree = "<group>"; };
+		2DC7911418C4F9A000CF44BC /* SKNode+SKTExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKNode+SKTExtras.m"; sourceTree = "<group>"; };
+		2DC7911518C4F9A000CF44BC /* SKTAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTAudio.h; sourceTree = "<group>"; };
+		2DC7911618C4F9A000CF44BC /* SKTAudio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTAudio.m; sourceTree = "<group>"; };
+		2DC7911718C4F9A000CF44BC /* SKTEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTEffects.h; sourceTree = "<group>"; };
+		2DC7911818C4F9A000CF44BC /* SKTEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTEffects.m; sourceTree = "<group>"; };
+		2DC7911918C4F9A000CF44BC /* SKTTimingFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTTimingFunctions.h; sourceTree = "<group>"; };
+		2DC7911A18C4F9A000CF44BC /* SKTTimingFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTTimingFunctions.m; sourceTree = "<group>"; };
+		2DC7911B18C4F9A000CF44BC /* SKTUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTUtils.h; sourceTree = "<group>"; };
+		2DDBBF9218CB817B0077CBFD /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		2DDBBF9418CB81840077CBFD /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		2DDBBF9618CB818B0077CBFD /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		2DDBBF9818CB819B0077CBFD /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		2DDBBF9A18CB81A20077CBFD /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		2DDBBF9C18CB81A70077CBFD /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		2DDBBF9E18CB81AF0077CBFD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		2DDBBFA018CBB1DA0077CBFD /* ABStarField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABStarField.h; sourceTree = "<group>"; };
+		2DDBBFA118CBB1DA0077CBFD /* ABStarField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABStarField.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2D86D84118BBDF980053D1DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DDBBF9F18CB81AF0077CBFD /* SystemConfiguration.framework in Frameworks */,
+				2DDBBF9D18CB81A70077CBFD /* StoreKit.framework in Frameworks */,
+				2DDBBF9B18CB81A20077CBFD /* MessageUI.framework in Frameworks */,
+				2DDBBF9918CB819B0077CBFD /* CoreTelephony.framework in Frameworks */,
+				2D86D84A18BBDF980053D1DC /* CoreGraphics.framework in Frameworks */,
+				2D87153218CBC3E900BD1961 /* libGoogleAdMobAds.a in Frameworks */,
+				2DDBBF9718CB818B0077CBFD /* AVFoundation.framework in Frameworks */,
+				2DDBBF9518CB81840077CBFD /* AudioToolbox.framework in Frameworks */,
+				2DDBBF9318CB817B0077CBFD /* AdSupport.framework in Frameworks */,
+				2D86D84C18BBDF980053D1DC /* UIKit.framework in Frameworks */,
+				2D86D84E18BBDF980053D1DC /* SpriteKit.framework in Frameworks */,
+				2D86D84818BBDF980053D1DC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D86D83B18BBDF980053D1DC = {
+			isa = PBXGroup;
+			children = (
+				2D86D84F18BBDF980053D1DC /* Amazing Bird */,
+				2D86D84618BBDF980053D1DC /* Frameworks */,
+				2D86D84518BBDF980053D1DC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2D86D84518BBDF980053D1DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2D86D84418BBDF980053D1DC /* Amazing Bird.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2D86D84618BBDF980053D1DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2DDBBF9E18CB81AF0077CBFD /* SystemConfiguration.framework */,
+				2DDBBF9C18CB81A70077CBFD /* StoreKit.framework */,
+				2DDBBF9A18CB81A20077CBFD /* MessageUI.framework */,
+				2DDBBF9818CB819B0077CBFD /* CoreTelephony.framework */,
+				2DDBBF9618CB818B0077CBFD /* AVFoundation.framework */,
+				2DDBBF9418CB81840077CBFD /* AudioToolbox.framework */,
+				2DDBBF9218CB817B0077CBFD /* AdSupport.framework */,
+				2D86D84718BBDF980053D1DC /* Foundation.framework */,
+				2D86D84918BBDF980053D1DC /* CoreGraphics.framework */,
+				2D86D84B18BBDF980053D1DC /* UIKit.framework */,
+				2D86D84D18BBDF980053D1DC /* SpriteKit.framework */,
+				2D86D87018BBDF990053D1DC /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2D86D84F18BBDF980053D1DC /* Amazing Bird */ = {
+			isa = PBXGroup;
+			children = (
+				2D87152718CBC3E900BD1961 /* AdMob */,
+				2DC790D118C4ECE200CF44BC /* Classes */,
+				2D86D85B18BBDF980053D1DC /* Main_iPhone.storyboard */,
+				2D3B620418CE839100BFEC6A /* Main_iPad.storyboard */,
+				2D86D86918BBDF980053D1DC /* Images.xcassets */,
+				2D86D85018BBDF980053D1DC /* Supporting Files */,
+			);
+			path = "Amazing Bird";
+			sourceTree = "<group>";
+		};
+		2D86D85018BBDF980053D1DC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2D86D85118BBDF980053D1DC /* Amazing Bird-Info.plist */,
+				2D86D85218BBDF980053D1DC /* InfoPlist.strings */,
+				2D86D85518BBDF980053D1DC /* main.m */,
+				2D86D85718BBDF980053D1DC /* Amazing Bird-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2D87152718CBC3E900BD1961 /* AdMob */ = {
+			isa = PBXGroup;
+			children = (
+				2D87152818CBC3E900BD1961 /* GADAdMobExtras.h */,
+				2D87152918CBC3E900BD1961 /* GADAdNetworkExtras.h */,
+				2D87152A18CBC3E900BD1961 /* GADAdSize.h */,
+				2D87152B18CBC3E900BD1961 /* GADBannerView.h */,
+				2D87152C18CBC3E900BD1961 /* GADBannerViewDelegate.h */,
+				2D87152D18CBC3E900BD1961 /* GADInterstitial.h */,
+				2D87152E18CBC3E900BD1961 /* GADInterstitialDelegate.h */,
+				2D87152F18CBC3E900BD1961 /* GADRequest.h */,
+				2D87153018CBC3E900BD1961 /* GADRequestError.h */,
+				2D87153118CBC3E900BD1961 /* libGoogleAdMobAds.a */,
+			);
+			path = AdMob;
+			sourceTree = "<group>";
+		};
+		2DC790D118C4ECE200CF44BC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2DC790D218C4ECE200CF44BC /* ABAppDelegate.h */,
+				2DC790D318C4ECE200CF44BC /* ABAppDelegate.m */,
+				2DC790D418C4ECE200CF44BC /* ABViewController.h */,
+				2DC790D518C4ECE200CF44BC /* ABViewController.m */,
+				2DC790D618C4ECE200CF44BC /* Assets */,
+				2DC790DD18C4ECE200CF44BC /* Scene */,
+				2DC790E418C4ECE200CF44BC /* Sprites */,
+				2DC790ED18C4ECE200CF44BC /* Utilities */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		2DC790D618C4ECE200CF44BC /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				2DC790D718C4ECE200CF44BC /* bird_anim.atlas */,
+				2DC790D818C4ECE200CF44BC /* Fonts */,
+				2DC790DC18C4ECE200CF44BC /* sprites.atlas */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		2DC790D818C4ECE200CF44BC /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				2D2EDBEC18CEB94D0091C21F /* ScoreFont.atlas */,
+				2D2EDBED18CEB94D0091C21F /* ScoreFont.xml */,
+				2D2EDBEE18CEB94D0091C21F /* ScoreFont@2x~ipad.xml */,
+				2D2EDBEF18CEB94D0091C21F /* ScoreFont@2x~iphone.xml */,
+				2D2EDBF018CEB94D0091C21F /* ScoreFont~ipad.xml */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		2DC790DD18C4ECE200CF44BC /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				2DC790DE18C4ECE200CF44BC /* ABGameScene.h */,
+				2DC790DF18C4ECE200CF44BC /* ABGameScene.m */,
+				2DC790E218C4ECE200CF44BC /* ABPlayer.h */,
+				2DC790E318C4ECE200CF44BC /* ABPlayer.m */,
+				2DDBBFA018CBB1DA0077CBFD /* ABStarField.h */,
+				2DDBBFA118CBB1DA0077CBFD /* ABStarField.m */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		2DC790E418C4ECE200CF44BC /* Sprites */ = {
+			isa = PBXGroup;
+			children = (
+				2DC790E518C4ECE200CF44BC /* ABCloud.h */,
+				2DC790E618C4ECE200CF44BC /* ABCloud.m */,
+				2DC790E718C4ECE200CF44BC /* ABGameCharacter.h */,
+				2DC790E818C4ECE200CF44BC /* ABGameCharacter.m */,
+				2DC790EB18C4ECE200CF44BC /* ABNormalBird.h */,
+				2DC790EC18C4ECE200CF44BC /* ABNormalBird.m */,
+			);
+			path = Sprites;
+			sourceTree = "<group>";
+		};
+		2DC790ED18C4ECE200CF44BC /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				2DC7910A18C4F9A000CF44BC /* SKTUtils */,
+				2DC790EE18C4ECE200CF44BC /* ABGraphicsUtilities.h */,
+				2DC790EF18C4ECE200CF44BC /* ABGraphicsUtilities.m */,
+				2DC790F018C4ECE200CF44BC /* ABRandom.h */,
+				2DC790F118C4ECE200CF44BC /* BMGlyphLabel */,
+				2DC790F618C4ECE200CF44BC /* SKNode+enumerateRecursively.h */,
+				2DC790F718C4ECE200CF44BC /* SKNode+enumerateRecursively.m */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		2DC790F118C4ECE200CF44BC /* BMGlyphLabel */ = {
+			isa = PBXGroup;
+			children = (
+				2DC790F218C4ECE200CF44BC /* BMGlyphFont.h */,
+				2DC790F318C4ECE200CF44BC /* BMGlyphFont.m */,
+				2DC790F418C4ECE200CF44BC /* BMGlyphLabel.h */,
+				2DC790F518C4ECE200CF44BC /* BMGlyphLabel.m */,
+			);
+			path = BMGlyphLabel;
+			sourceTree = "<group>";
+		};
+		2DC7910A18C4F9A000CF44BC /* SKTUtils */ = {
+			isa = PBXGroup;
+			children = (
+				2DC7910B18C4F9A000CF44BC /* SKAction+SKTExtras.h */,
+				2DC7910C18C4F9A000CF44BC /* SKAction+SKTExtras.m */,
+				2DC7910D18C4F9A000CF44BC /* SKAction+SKTSpecialEffects.h */,
+				2DC7910E18C4F9A000CF44BC /* SKAction+SKTSpecialEffects.m */,
+				2DC7910F18C4F9A000CF44BC /* SKEmitterNode+SKTExtras.h */,
+				2DC7911018C4F9A000CF44BC /* SKEmitterNode+SKTExtras.m */,
+				2DC7911118C4F9A000CF44BC /* SKNode+SKTDebugDraw.h */,
+				2DC7911218C4F9A000CF44BC /* SKNode+SKTDebugDraw.m */,
+				2DC7911318C4F9A000CF44BC /* SKNode+SKTExtras.h */,
+				2DC7911418C4F9A000CF44BC /* SKNode+SKTExtras.m */,
+				2DC7911518C4F9A000CF44BC /* SKTAudio.h */,
+				2DC7911618C4F9A000CF44BC /* SKTAudio.m */,
+				2DC7911718C4F9A000CF44BC /* SKTEffects.h */,
+				2DC7911818C4F9A000CF44BC /* SKTEffects.m */,
+				2DC7911918C4F9A000CF44BC /* SKTTimingFunctions.h */,
+				2DC7911A18C4F9A000CF44BC /* SKTTimingFunctions.m */,
+				2DC7911B18C4F9A000CF44BC /* SKTUtils.h */,
+			);
+			path = SKTUtils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2D86D84318BBDF980053D1DC /* Amazing Bird */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D86D88018BBDF990053D1DC /* Build configuration list for PBXNativeTarget "Amazing Bird" */;
+			buildPhases = (
+				2D86D84018BBDF980053D1DC /* Sources */,
+				2D86D84118BBDF980053D1DC /* Frameworks */,
+				2D86D84218BBDF980053D1DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Amazing Bird";
+			productName = "Amazing Bird";
+			productReference = 2D86D84418BBDF980053D1DC /* Amazing Bird.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2D86D83C18BBDF980053D1DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AB;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = ChristianEnevoldsen;
+				TargetAttributes = {
+					2D86D84318BBDF980053D1DC = {
+						DevelopmentTeam = YR3485WD63;
+					};
+				};
+			};
+			buildConfigurationList = 2D86D83F18BBDF980053D1DC /* Build configuration list for PBXProject "Amazing Bird" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2D86D83B18BBDF980053D1DC;
+			productRefGroup = 2D86D84518BBDF980053D1DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2D86D84318BBDF980053D1DC /* Amazing Bird */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2D86D84218BBDF980053D1DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D86D86A18BBDF980053D1DC /* Images.xcassets in Resources */,
+				2D86D85D18BBDF980053D1DC /* Main_iPhone.storyboard in Resources */,
+				2DC790FE18C4ECE200CF44BC /* sprites.atlas in Resources */,
+				2D2EDBF118CEB94D0091C21F /* ScoreFont.atlas in Resources */,
+				2D3B620618CE839100BFEC6A /* Main_iPad.storyboard in Resources */,
+				2D86D85418BBDF980053D1DC /* InfoPlist.strings in Resources */,
+				2D2EDBF318CEB94D0091C21F /* ScoreFont@2x~ipad.xml in Resources */,
+				2DC790FA18C4ECE200CF44BC /* bird_anim.atlas in Resources */,
+				2D2EDBF418CEB94D0091C21F /* ScoreFont@2x~iphone.xml in Resources */,
+				2D2EDBF218CEB94D0091C21F /* ScoreFont.xml in Resources */,
+				2D2EDBF518CEB94D0091C21F /* ScoreFont~ipad.xml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2D86D84018BBDF980053D1DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DC7911F18C4F9A000CF44BC /* SKNode+SKTDebugDraw.m in Sources */,
+				2DC7910918C4ECE200CF44BC /* SKNode+enumerateRecursively.m in Sources */,
+				2DC7912218C4F9A000CF44BC /* SKTEffects.m in Sources */,
+				2DC7911E18C4F9A000CF44BC /* SKEmitterNode+SKTExtras.m in Sources */,
+				2DC7911D18C4F9A000CF44BC /* SKAction+SKTSpecialEffects.m in Sources */,
+				2DDBBFA218CBB1DA0077CBFD /* ABStarField.m in Sources */,
+				2DC7910818C4ECE200CF44BC /* BMGlyphLabel.m in Sources */,
+				2DC7910218C4ECE200CF44BC /* ABCloud.m in Sources */,
+				2D86D85618BBDF980053D1DC /* main.m in Sources */,
+				2DC7910118C4ECE200CF44BC /* ABPlayer.m in Sources */,
+				2DC790F918C4ECE200CF44BC /* ABViewController.m in Sources */,
+				2DC7912118C4F9A000CF44BC /* SKTAudio.m in Sources */,
+				2DC790F818C4ECE200CF44BC /* ABAppDelegate.m in Sources */,
+				2DC790FF18C4ECE200CF44BC /* ABGameScene.m in Sources */,
+				2DC7910618C4ECE200CF44BC /* ABGraphicsUtilities.m in Sources */,
+				2DC7912018C4F9A000CF44BC /* SKNode+SKTExtras.m in Sources */,
+				2DC7910518C4ECE200CF44BC /* ABNormalBird.m in Sources */,
+				2DC7912318C4F9A000CF44BC /* SKTTimingFunctions.m in Sources */,
+				2DC7910318C4ECE200CF44BC /* ABGameCharacter.m in Sources */,
+				2DC7911C18C4F9A000CF44BC /* SKAction+SKTExtras.m in Sources */,
+				2DC7910718C4ECE200CF44BC /* BMGlyphFont.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2D3B620418CE839100BFEC6A /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D3B620518CE839100BFEC6A /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		2D86D85218BBDF980053D1DC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D86D85318BBDF980053D1DC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2D86D85B18BBDF980053D1DC /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D86D85C18BBDF980053D1DC /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2D86D87E18BBDF990053D1DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2D86D87F18BBDF990053D1DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2D86D88118BBDF990053D1DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Amazing Bird/Amazing Bird-Prefix.pch";
+				INFOPLIST_FILE = "Amazing Bird/Amazing Bird-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(SRCROOT)/**",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2D86D88218BBDF990053D1DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Amazing Bird/Amazing Bird-Prefix.pch";
+				INFOPLIST_FILE = "Amazing Bird/Amazing Bird-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(SRCROOT)/**",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D86D83F18BBDF980053D1DC /* Build configuration list for PBXProject "Amazing Bird" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D86D87E18BBDF990053D1DC /* Debug */,
+				2D86D87F18BBDF990053D1DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D86D88018BBDF990053D1DC /* Build configuration list for PBXNativeTarget "Amazing Bird" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D86D88118BBDF990053D1DC /* Debug */,
+				2D86D88218BBDF990053D1DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2D86D83C18BBDF980053D1DC /* Project object */;
+}
