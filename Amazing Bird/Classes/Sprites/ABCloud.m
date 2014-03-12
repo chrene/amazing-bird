@@ -14,7 +14,7 @@
 
 - (instancetype)initAtPosition:(CGPoint)position
 {
-    self = [super initWithTexture:[[SKTextureAtlas atlasNamed:@"sprites"] textureNamed:@"Cloud"]
+    self = [super initWithTexture:[SKTexture textureWithImageNamed:@"Cloud"]
 						 position:position];
     if (self) {
 		self.name = @"cloud";

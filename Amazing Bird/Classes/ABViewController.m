@@ -20,16 +20,17 @@
 - (GADRequest *)request
 {
 	GADRequest *request = [GADRequest request];
-//	request.testDevices = @[@"39A86C6A-1DBD-5A6A-9FE0-2D4314BE2580"];
-//	request.testing = YES;
 	return request;
 }
 
 - (void)viewDidLoad
 {
 	[super viewDidLoad];
+    [self setupAdBanner];
+}
 
-	// Initialize banner view
+- (void)setupAdBanner {
+    // Initialize banner view
 	_bannerView = [[GADBannerView alloc] initWithAdSize:kGADAdSizeSmartBannerLandscape];
 
 	// Specify the ad unit id
@@ -52,7 +53,7 @@
 	if (!skView.scene) {
 		SKScene * scene = [ABGameScene sceneWithSize:skView.bounds.size];
 		scene.scaleMode = SKSceneScaleModeResizeFill;
-		[skView presentScene:scene];
+        [skView presentScene:scene];
 		_runningScene = (ABGameScene *)scene;
 	}
 
@@ -60,9 +61,6 @@
 
 - (BOOL)shouldAutorotate
 {
-	if (_runningScene) {
-		return !_runningScene.gameStarted;
-	}
     return YES;
 }
 

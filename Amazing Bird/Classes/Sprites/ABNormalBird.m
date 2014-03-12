@@ -22,7 +22,7 @@
 
 - (instancetype)initAtPosition:(CGPoint)position withPlayer:(ABPlayer *)player {
 
-    self = [super initWithTexture:[[SKTextureAtlas atlasNamed:@"bird_anim"] textureNamed:@"bird_anim0"]  position:position];
+    self = [super initWithTexture:[SKTexture textureWithImageNamed:@"bird_anim0"]  position:position];
     if (self) {
 		self.player = player;
 		self.hitPoints = 1;
