@@ -10,6 +10,6 @@
 
 @interface ABGraphicsUtilities : NSObject
 
-+ (NSArray *) loadFramesFromAtlas:(NSString *)atlas baseName:(NSString *)baseName;
++ (NSArray *)loadFramesFromAtlas:(NSString *)atlas baseName:(NSString *)baseName;
 
 @end

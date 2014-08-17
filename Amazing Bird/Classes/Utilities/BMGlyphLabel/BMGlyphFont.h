@@ -16,13 +16,13 @@
 @property (strong, readonly, nonatomic) NSMutableDictionary *charsTextures;
 @property (strong, readonly, nonatomic) SKTextureAtlas *textureAtlas;
 
-- (id) initWithName:(NSString *)name;
+- (id)initWithName:(NSString *)name;
 
-- (NSInteger) xAdvance:(unichar)charId;
-- (NSInteger) xOffset:(unichar)charId;
-- (NSInteger) yOffset:(unichar)charId;
-- (NSInteger) kerningForFirst:(unichar)first second:(unichar)second;
-- (SKTexture*) textureFor:(unichar)charId;
+- (NSInteger)xAdvance:(unichar)charId;
+- (NSInteger)xOffset:(unichar)charId;
+- (NSInteger)yOffset:(unichar)charId;
+- (NSInteger)kerningForFirst:(unichar)first second:(unichar)second;
+- (SKTexture *)textureFor:(unichar)charId;
 
-+ (BMGlyphFont*) fontWithName:(NSString *)name;
++ (BMGlyphFont *)fontWithName:(NSString *)name;
 @end

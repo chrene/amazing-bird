@@ -11,32 +11,27 @@
 
 @implementation ABAppDelegate
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 	[self load];
 	return YES;
 }
 
-- (void)applicationDidEnterBackground:(UIApplication *)application
-{
+- (void)applicationDidEnterBackground:(UIApplication *)application {
 	[self save];
 }
 
-- (void)applicationWillEnterForeground:(UIApplication *)application
-{
+- (void)applicationWillEnterForeground:(UIApplication *)application {
 	[self load];
 }
 
-- (void)applicationWillTerminate:(UIApplication *)application
-{
+- (void)applicationWillTerminate:(UIApplication *)application {
 	[self save];
 }
 
-- (void)save
-{
+- (void)save {
 	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,
-														 NSUserDomainMask,
-														 YES);
+	                                                     NSUserDomainMask,
+	                                                     YES);
 	NSString *documentPath = [paths firstObject];
 	NSString *filePath = [documentPath stringByAppendingPathComponent:@"player.dat"];
 
@@ -48,14 +43,12 @@
 
 	[encoder finishEncoding];
 	[data writeToFile:filePath atomically:YES];
-
 }
 
-- (void)load
-{
+- (void)load {
 	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,
-														 NSUserDomainMask,
-														 YES);
+	                                                     NSUserDomainMask,
+	                                                     YES);
 	NSString *documentPath = [paths firstObject];
 	NSString *filePath = [documentPath stringByAppendingPathComponent:@"player.dat"];
 	NSData *data = [NSData dataWithContentsOfFile:filePath];
@@ -65,7 +58,6 @@
 		[[ABPlayer sharedPlayer] setPremium:[decoder decodeBoolForKey:@"premium"]];
 
 		[decoder finishDecoding];
-
 	}
 }
 

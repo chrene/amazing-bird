@@ -12,25 +12,22 @@
 	ABGameScene *_runningScene;
 }
 
-- (BOOL)prefersStatusBarHidden
-{
+- (BOOL)prefersStatusBarHidden {
 	return YES;
 }
 
-- (GADRequest *)request
-{
+- (GADRequest *)request {
 	GADRequest *request = [GADRequest request];
 	return request;
 }
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
 	[super viewDidLoad];
-    [self setupAdBanner];
+	[self setupAdBanner];
 }
 
 - (void)setupAdBanner {
-    // Initialize banner view
+	// Initialize banner view
 	_bannerView = [[GADBannerView alloc] initWithAdSize:kGADAdSizeSmartBannerLandscape];
 
 	// Specify the ad unit id
@@ -46,72 +43,78 @@
 	_bannerView.delegate = self;
 }
 
-- (void)viewDidLayoutSubviews
-{
+- (void)viewDidLayoutSubviews {
 	// Configure the view.
-    SKView * skView = (SKView *)self.view;
+	SKView *skView = (SKView *)self.view;
 	if (!skView.scene) {
-		SKScene * scene = [ABGameScene sceneWithSize:skView.bounds.size];
+		SKScene *scene = [ABGameScene sceneWithSize:skView.bounds.size];
 		scene.scaleMode = SKSceneScaleModeResizeFill;
-        [skView presentScene:scene];
+		[skView presentScene:scene];
 		_runningScene = (ABGameScene *)scene;
+        _runningScene.gameSceneDelegate = self;
 	}
-
 }
 
-- (BOOL)shouldAutorotate
-{
-    return YES;
+- (void)gameDidEnd {
+    [self adViewDidDismissScreen:_bannerView];
 }
 
-- (NSUInteger)supportedInterfaceOrientations
-{
+- (void)gameDidStart {
+    [self adViewWillDismissScreen:_bannerView];
+}
+
+- (BOOL)shouldAutorotate {
+	return YES;
+}
+
+- (NSUInteger)supportedInterfaceOrientations {
 	if (_runningScene) {
 		if (_runningScene.gameStarted) {
 			return [[UIApplication sharedApplication] statusBarOrientation];
 		}
 	}
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        return UIInterfaceOrientationMaskAllButUpsideDown;
-    } else {
-        return UIInterfaceOrientationMaskAll;
-    }
+	if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
+		return UIInterfaceOrientationMaskAllButUpsideDown;
+	}
+	else {
+		return UIInterfaceOrientationMaskAll;
+	}
 }
 
 #pragma mark - ABGameSceneDelegate
 
-- (void)adViewWillDismissScreen:(GADBannerView *)adView
-{
-    _bannerView.frame = CGRectMake(0, self.view.bounds.size.height-_bannerView.frame.size.height,
-                                   _bannerView.frame.size.width, _bannerView.frame.size.height);
+- (void)adViewWillDismissScreen:(GADBannerView *)adView {
+	_bannerView.frame = CGRectMake(0, self.view.bounds.size.height - _bannerView.frame.size.height,
+	                               _bannerView.frame.size.width, _bannerView.frame.size.height);
 	[UIView beginAnimations:@"BannerSlideDown" context:nil];
 
-    _bannerView.frame = CGRectMake(0, self.view.bounds.size.height,
-                                   _bannerView.frame.size.width, _bannerView.frame.size.height);
+	_bannerView.frame = CGRectMake(0, self.view.bounds.size.height,
+	                               _bannerView.frame.size.width, _bannerView.frame.size.height);
 
-    [UIView commitAnimations];
-
+	[UIView commitAnimations];
 }
 
-- (void)adViewDidDismissScreen:(GADBannerView *)adView
-{
-    [_bannerView loadRequest:[self request]];
+- (void)adViewDidDismissScreen:(GADBannerView *)adView {
+    if (!_runningScene.gameStarted) {
+        [_bannerView loadRequest:[self request]];
+    }
 }
 
 #pragma mark - GADBannerViewDelegate
 
-- (void)adViewDidReceiveAd:(GADBannerView *)view
-{
-    _bannerView.frame = CGRectMake(0, self.view.bounds.size.height + _bannerView.bounds.size.height,
-                                   _bannerView.frame.size.width, _bannerView.frame.size.height);
-    [UIView beginAnimations:@"BannerSlide" context:nil];
-    _bannerView.frame = CGRectMake(0, self.view.bounds.size.height - _bannerView.bounds.size.height,
-                                   _bannerView.frame.size.width, _bannerView.frame.size.height);
-    [UIView commitAnimations];
+- (void)adViewDidReceiveAd:(GADBannerView *)view {
+    if (_runningScene.gameStarted) {
+        return;
+    }
+	_bannerView.frame = CGRectMake(0, self.view.bounds.size.height + _bannerView.bounds.size.height,
+	                               _bannerView.frame.size.width, _bannerView.frame.size.height);
+	[UIView beginAnimations:@"BannerSlide" context:nil];
+	_bannerView.frame = CGRectMake(0, self.view.bounds.size.height - _bannerView.bounds.size.height,
+	                               _bannerView.frame.size.width, _bannerView.frame.size.height);
+	[UIView commitAnimations];
 }
 
-- (void)adView:(GADBannerView *)view didFailToReceiveAdWithError:(GADRequestError *)error
-{
+- (void)adView:(GADBannerView *)view didFailToReceiveAdWithError:(GADRequestError *)error {
 	NSLog(@"adView:didFailToReceiveAdWithError: %@", [error localizedDescription]);
 }
 

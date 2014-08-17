@@ -19,13 +19,13 @@ typedef enum : uint8_t {
 
 typedef enum : uint8_t {
 	ABGameCharacterStatusIdle = 1 << 1,
-	ABGameCharacterStatusDying = 1 << 2,
-	ABGameCharacterStatusDead = 1 << 3,
-	ABGameCharacterStatusReviving = 1 << 4,
-	ABGameCharacterStatusMoving = 1 << 5,
-	ABGameCharacterStatusParalyzed = ABGameCharacterStatusDying
-									& ABGameCharacterStatusDead
-									& ABGameCharacterStatusReviving
+	    ABGameCharacterStatusDying = 1 << 2,
+	    ABGameCharacterStatusDead = 1 << 3,
+	    ABGameCharacterStatusReviving = 1 << 4,
+	    ABGameCharacterStatusMoving = 1 << 5,
+	    ABGameCharacterStatusParalyzed = ABGameCharacterStatusDying
+	    & ABGameCharacterStatusDead
+	    & ABGameCharacterStatusReviving
 } ABGameCharacterStatus;
 
 @interface ABGameCharacter : SKSpriteNode

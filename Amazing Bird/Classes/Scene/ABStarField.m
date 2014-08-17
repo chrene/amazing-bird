@@ -14,19 +14,18 @@
 	SKSpriteNode *starField2;
 }
 
-- (instancetype)initWithSize:(CGSize)size
-{
-    self = [super init];
+- (instancetype)initWithSize:(CGSize)size {
+	self = [super init];
 	self.size = size;
-    if (self) {
+	if (self) {
 		starField1 = [self starField];
 		starField2 = [self starField];
 		starField1.position = CGPointMake(0, 0);
 		starField2.position = CGPointMake(size.width + 1, 0);
 		[self addChild:starField1];
 		[self addChild:starField2];
-    }
-    return self;
+	}
+	return self;
 }
 
 - (SKSpriteNode *)starField {
@@ -39,9 +38,9 @@
 		SKSpriteNode *star = [SKSpriteNode spriteNodeWithTexture:[atlas textureNamed:[NSString stringWithFormat:@"Star%d", (int)abRand(1, (abRandf() > .5) ? 4 : 3)]]];
 		[starField addChild:star];
 		CGFloat posY = abRand(0, self.size.height);
-		star.position = CGPointMake( abRandf() * self.size.width,
-									posY );
-		star.alpha = (CGFloat)(posY/self.size.height);
+		star.position = CGPointMake(abRandf() * self.size.width,
+		                            posY);
+		star.alpha = (CGFloat)(posY / self.size.height);
 	}
 	return starField;
 }
@@ -49,7 +48,7 @@
 static NSTimeInterval interval;
 - (void)update:(NSTimeInterval)delta {
 	interval += delta;
-    CGFloat dx = [UIScreen mainScreen].scale * .5;
+	CGFloat dx = [UIScreen mainScreen].scale * .5;
 	if (interval > .03) {
 		interval = 0;
 		starField1.position = CGPointMake(starField1.position.x - dx, starField1.position.y);

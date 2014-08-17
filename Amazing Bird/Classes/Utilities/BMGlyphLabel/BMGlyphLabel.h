@@ -9,25 +9,22 @@
 #import <SpriteKit/SpriteKit.h>
 #import "BMGlyphFont.h"
 
-typedef enum _BMGlyphHorizontalAlignment
-{
-    BMGlyphHorizontalAlignmentCentered = 1,
-    BMGlyphHorizontalAlignmentRight = 2,
-    BMGlyphHorizontalAlignmentLeft = 3
+typedef enum _BMGlyphHorizontalAlignment {
+	BMGlyphHorizontalAlignmentCentered = 1,
+	BMGlyphHorizontalAlignmentRight = 2,
+	BMGlyphHorizontalAlignmentLeft = 3
 } BMGlyphHorizontalAlignment;
 
-typedef enum _BMGlyphVerticalAlignment
-{
-    BMGlyphVerticalAlignmentMiddle = 1,
-    BMGlyphVerticalAlignmentTop = 2,
-    BMGlyphVerticalAlignmentBottom = 3
+typedef enum _BMGlyphVerticalAlignment {
+	BMGlyphVerticalAlignmentMiddle = 1,
+	BMGlyphVerticalAlignmentTop = 2,
+	BMGlyphVerticalAlignmentBottom = 3
 } BMGlyphVerticalAlignment;
 
-typedef enum _BMGlyphJustify
-{
-    BMGlyphJustifyLeft = 1,
-    BMGlyphJustifyRight = 2,
-    BMGlyphJustifyCenter = 3
+typedef enum _BMGlyphJustify {
+	BMGlyphJustifyLeft = 1,
+	BMGlyphJustifyRight = 2,
+	BMGlyphJustifyCenter = 3
 } BMGlyphJustify;
 
 
@@ -38,8 +35,8 @@ typedef enum _BMGlyphJustify
 @property (assign, nonatomic) BMGlyphVerticalAlignment verticalAlignment;
 @property (assign, nonatomic) BMGlyphJustify textJustify;
 
-- (id) initWithText:(NSString *)text font:(BMGlyphFont *)font;
+- (id)initWithText:(NSString *)text font:(BMGlyphFont *)font;
 
-+ (BMGlyphLabel*) labelWithText:(NSString *)text font:(BMGlyphFont *)font;
++ (BMGlyphLabel *)labelWithText:(NSString *)text font:(BMGlyphFont *)font;
 
 @end

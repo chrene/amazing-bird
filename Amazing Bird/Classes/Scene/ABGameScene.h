@@ -32,6 +32,6 @@ typedef enum : uint8_t {
 
 - (void)addNode:(SKNode *)node atWorldLayer:(ABWorldLayer)worldLayer;
 
-@property (nonatomic, weak) id<ABGameSceneDelegate> delegate;
+@property (nonatomic, weak) id <ABGameSceneDelegate> gameSceneDelegate;
 
 @end
