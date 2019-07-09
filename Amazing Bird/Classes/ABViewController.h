@@ -8,12 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import <SpriteKit/SpriteKit.h>
-#import "GADBannerViewDelegate.h"
-#import "GADBannerView.h"
 #import "ABGameScene.h"
 
-@interface ABViewController : UIViewController <GADBannerViewDelegate, ABGameSceneDelegate>
-
-@property (nonatomic, readonly) GADBannerView *bannerView;
+@interface ABViewController : UIViewController <ABGameSceneDelegate>
 
 @end

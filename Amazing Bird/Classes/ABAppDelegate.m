@@ -35,12 +35,10 @@
 	NSString *documentPath = [paths firstObject];
 	NSString *filePath = [documentPath stringByAppendingPathComponent:@"player.dat"];
 
-	NSMutableData *data = [[NSMutableData alloc] init];
-	NSKeyedArchiver *encoder = [[NSKeyedArchiver alloc] initForWritingWithMutableData:data];
-
+    NSKeyedArchiver *encoder = [[NSKeyedArchiver alloc] initRequiringSecureCoding:YES];
 	[encoder encodeBool:[ABPlayer sharedPlayer].isPremium forKey:@"premium"];
 	[encoder encodeInt:[ABPlayer sharedPlayer].highscore forKey:@"highscore"];
-
+    NSData *data = [encoder encodedData];
 	[encoder finishEncoding];
 	[data writeToFile:filePath atomically:YES];
 }
@@ -53,7 +51,7 @@
 	NSString *filePath = [documentPath stringByAppendingPathComponent:@"player.dat"];
 	NSData *data = [NSData dataWithContentsOfFile:filePath];
 	if (data) {
-		NSKeyedUnarchiver *decoder = [[NSKeyedUnarchiver alloc] initForReadingWithData:data];
+		NSKeyedUnarchiver *decoder = [[NSKeyedUnarchiver alloc] initForReadingFromData:data error:nil];
 		[[ABPlayer sharedPlayer] setHighscore:[decoder decodeIntForKey:@"highscore"]];
 		[[ABPlayer sharedPlayer] setPremium:[decoder decodeBoolForKey:@"premium"]];
 

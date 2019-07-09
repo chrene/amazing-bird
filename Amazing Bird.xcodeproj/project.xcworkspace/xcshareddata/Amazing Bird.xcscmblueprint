@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "731040E5F735A17CDEAF2A0A5D01D30E69C4724C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "F2581B35-6D83-481F-9B6E-74E64B62ABA1" : 0,
+    "731040E5F735A17CDEAF2A0A5D01D30E69C4724C" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "11D497D9-A165-4EEF-B2C7-C1312282DF9E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "F2581B35-6D83-481F-9B6E-74E64B62ABA1" : "Amazing Bird",
+    "731040E5F735A17CDEAF2A0A5D01D30E69C4724C" : "Amazing%20Bird"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Amazing Bird",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Amazing Bird.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/Chrene\/amazing-bird.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "731040E5F735A17CDEAF2A0A5D01D30E69C4724C"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/Chrene\/amazing-bird.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F2581B35-6D83-481F-9B6E-74E64B62ABA1"
+    }
+  ]
+}
