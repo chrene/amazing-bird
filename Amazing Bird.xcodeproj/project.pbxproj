@@ -21,7 +21,7 @@
 		2D86D85618BBDF980053D1DC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D86D85518BBDF980053D1DC /* main.m */; };
 		2D86D85D18BBDF980053D1DC /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D86D85B18BBDF980053D1DC /* Main_iPhone.storyboard */; };
 		2D86D86A18BBDF980053D1DC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D86D86918BBDF980053D1DC /* Images.xcassets */; };
-		2D87153218CBC3E900BD1961 /* libGoogleAdMobAds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D87153118CBC3E900BD1961 /* libGoogleAdMobAds.a */; };
+		2DAB000318AB000000000003 /* ABSceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAB000218AB000000000002 /* ABSceneDelegate.m */; };
 		2DC790F818C4ECE200CF44BC /* ABAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC790D318C4ECE200CF44BC /* ABAppDelegate.m */; };
 		2DC790F918C4ECE200CF44BC /* ABViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC790D518C4ECE200CF44BC /* ABViewController.m */; };
 		2DC790FA18C4ECE200CF44BC /* bird_anim.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 2DC790D718C4ECE200CF44BC /* bird_anim.atlas */; };
@@ -43,13 +43,8 @@
 		2DC7912118C4F9A000CF44BC /* SKTAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC7911618C4F9A000CF44BC /* SKTAudio.m */; };
 		2DC7912218C4F9A000CF44BC /* SKTEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC7911818C4F9A000CF44BC /* SKTEffects.m */; };
 		2DC7912318C4F9A000CF44BC /* SKTTimingFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC7911A18C4F9A000CF44BC /* SKTTimingFunctions.m */; };
-		2DDBBF9318CB817B0077CBFD /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DDBBF9218CB817B0077CBFD /* AdSupport.framework */; };
 		2DDBBF9518CB81840077CBFD /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DDBBF9418CB81840077CBFD /* AudioToolbox.framework */; };
 		2DDBBF9718CB818B0077CBFD /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DDBBF9618CB818B0077CBFD /* AVFoundation.framework */; };
-		2DDBBF9918CB819B0077CBFD /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DDBBF9818CB819B0077CBFD /* CoreTelephony.framework */; };
-		2DDBBF9B18CB81A20077CBFD /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DDBBF9A18CB81A20077CBFD /* MessageUI.framework */; };
-		2DDBBF9D18CB81A70077CBFD /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DDBBF9C18CB81A70077CBFD /* StoreKit.framework */; };
-		2DDBBF9F18CB81AF0077CBFD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DDBBF9E18CB81AF0077CBFD /* SystemConfiguration.framework */; };
 		2DDBBFA218CBB1DA0077CBFD /* ABStarField.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DDBBFA118CBB1DA0077CBFD /* ABStarField.m */; };
 		AFB857AE2F6C7F6500689896 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFB857AC2F6C7F6500689896 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -73,16 +68,8 @@
 		2D86D85C18BBDF980053D1DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		2D86D86918BBDF980053D1DC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2D86D87018BBDF990053D1DC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		2D87152818CBC3E900BD1961 /* GADAdMobExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdMobExtras.h; sourceTree = "<group>"; };
-		2D87152918CBC3E900BD1961 /* GADAdNetworkExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdNetworkExtras.h; sourceTree = "<group>"; };
-		2D87152A18CBC3E900BD1961 /* GADAdSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdSize.h; sourceTree = "<group>"; };
-		2D87152B18CBC3E900BD1961 /* GADBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADBannerView.h; sourceTree = "<group>"; };
-		2D87152C18CBC3E900BD1961 /* GADBannerViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADBannerViewDelegate.h; sourceTree = "<group>"; };
-		2D87152D18CBC3E900BD1961 /* GADInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADInterstitial.h; sourceTree = "<group>"; };
-		2D87152E18CBC3E900BD1961 /* GADInterstitialDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADInterstitialDelegate.h; sourceTree = "<group>"; };
-		2D87152F18CBC3E900BD1961 /* GADRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADRequest.h; sourceTree = "<group>"; };
-		2D87153018CBC3E900BD1961 /* GADRequestError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADRequestError.h; sourceTree = "<group>"; };
-		2D87153118CBC3E900BD1961 /* libGoogleAdMobAds.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAdMobAds.a; sourceTree = "<group>"; };
+		2DAB000118AB000000000001 /* ABSceneDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABSceneDelegate.h; sourceTree = "<group>"; };
+		2DAB000218AB000000000002 /* ABSceneDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABSceneDelegate.m; sourceTree = "<group>"; };
 		2DC790D218C4ECE200CF44BC /* ABAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABAppDelegate.h; sourceTree = "<group>"; };
 		2DC790D318C4ECE200CF44BC /* ABAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABAppDelegate.m; sourceTree = "<group>"; };
 		2DC790D418C4ECE200CF44BC /* ABViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABViewController.h; sourceTree = "<group>"; };
@@ -125,13 +112,8 @@
 		2DC7911918C4F9A000CF44BC /* SKTTimingFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTTimingFunctions.h; sourceTree = "<group>"; };
 		2DC7911A18C4F9A000CF44BC /* SKTTimingFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTTimingFunctions.m; sourceTree = "<group>"; };
 		2DC7911B18C4F9A000CF44BC /* SKTUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTUtils.h; sourceTree = "<group>"; };
-		2DDBBF9218CB817B0077CBFD /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		2DDBBF9418CB81840077CBFD /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		2DDBBF9618CB818B0077CBFD /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		2DDBBF9818CB819B0077CBFD /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
-		2DDBBF9A18CB81A20077CBFD /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
-		2DDBBF9C18CB81A70077CBFD /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
-		2DDBBF9E18CB81AF0077CBFD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		2DDBBFA018CBB1DA0077CBFD /* ABStarField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABStarField.h; sourceTree = "<group>"; };
 		2DDBBFA118CBB1DA0077CBFD /* ABStarField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABStarField.m; sourceTree = "<group>"; };
 		AFB857AD2F6C7F6500689896 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Amazing Bird/Base.lproj/LaunchScreen.storyboard"; sourceTree = SOURCE_ROOT; };
@@ -142,15 +124,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DDBBF9F18CB81AF0077CBFD /* SystemConfiguration.framework in Frameworks */,
-				2DDBBF9D18CB81A70077CBFD /* StoreKit.framework in Frameworks */,
-				2DDBBF9B18CB81A20077CBFD /* MessageUI.framework in Frameworks */,
-				2DDBBF9918CB819B0077CBFD /* CoreTelephony.framework in Frameworks */,
 				2D86D84A18BBDF980053D1DC /* CoreGraphics.framework in Frameworks */,
-				2D87153218CBC3E900BD1961 /* libGoogleAdMobAds.a in Frameworks */,
 				2DDBBF9718CB818B0077CBFD /* AVFoundation.framework in Frameworks */,
 				2DDBBF9518CB81840077CBFD /* AudioToolbox.framework in Frameworks */,
-				2DDBBF9318CB817B0077CBFD /* AdSupport.framework in Frameworks */,
 				2D86D84C18BBDF980053D1DC /* UIKit.framework in Frameworks */,
 				2D86D84E18BBDF980053D1DC /* SpriteKit.framework in Frameworks */,
 				2D86D84818BBDF980053D1DC /* Foundation.framework in Frameworks */,
@@ -180,13 +156,8 @@
 		2D86D84618BBDF980053D1DC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2DDBBF9E18CB81AF0077CBFD /* SystemConfiguration.framework */,
-				2DDBBF9C18CB81A70077CBFD /* StoreKit.framework */,
-				2DDBBF9A18CB81A20077CBFD /* MessageUI.framework */,
-				2DDBBF9818CB819B0077CBFD /* CoreTelephony.framework */,
 				2DDBBF9618CB818B0077CBFD /* AVFoundation.framework */,
 				2DDBBF9418CB81840077CBFD /* AudioToolbox.framework */,
-				2DDBBF9218CB817B0077CBFD /* AdSupport.framework */,
 				2D86D84718BBDF980053D1DC /* Foundation.framework */,
 				2D86D84918BBDF980053D1DC /* CoreGraphics.framework */,
 				2D86D84B18BBDF980053D1DC /* UIKit.framework */,
@@ -199,7 +170,6 @@
 		2D86D84F18BBDF980053D1DC /* Amazing Bird */ = {
 			isa = PBXGroup;
 			children = (
-				2D87152718CBC3E900BD1961 /* AdMob */,
 				2DC790D118C4ECE200CF44BC /* Classes */,
 				2D86D85B18BBDF980053D1DC /* Main_iPhone.storyboard */,
 				AFB857AC2F6C7F6500689896 /* LaunchScreen.storyboard */,
@@ -221,28 +191,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		2D87152718CBC3E900BD1961 /* AdMob */ = {
-			isa = PBXGroup;
-			children = (
-				2D87152818CBC3E900BD1961 /* GADAdMobExtras.h */,
-				2D87152918CBC3E900BD1961 /* GADAdNetworkExtras.h */,
-				2D87152A18CBC3E900BD1961 /* GADAdSize.h */,
-				2D87152B18CBC3E900BD1961 /* GADBannerView.h */,
-				2D87152C18CBC3E900BD1961 /* GADBannerViewDelegate.h */,
-				2D87152D18CBC3E900BD1961 /* GADInterstitial.h */,
-				2D87152E18CBC3E900BD1961 /* GADInterstitialDelegate.h */,
-				2D87152F18CBC3E900BD1961 /* GADRequest.h */,
-				2D87153018CBC3E900BD1961 /* GADRequestError.h */,
-				2D87153118CBC3E900BD1961 /* libGoogleAdMobAds.a */,
-			);
-			path = AdMob;
-			sourceTree = "<group>";
-		};
 		2DC790D118C4ECE200CF44BC /* Classes */ = {
 			isa = PBXGroup;
 			children = (
 				2DC790D218C4ECE200CF44BC /* ABAppDelegate.h */,
 				2DC790D318C4ECE200CF44BC /* ABAppDelegate.m */,
+				2DAB000118AB000000000001 /* ABSceneDelegate.h */,
+				2DAB000218AB000000000002 /* ABSceneDelegate.m */,
 				2DC790D418C4ECE200CF44BC /* ABViewController.h */,
 				2DC790D518C4ECE200CF44BC /* ABViewController.m */,
 				2DC790D618C4ECE200CF44BC /* Assets */,
@@ -381,7 +336,7 @@
 				ORGANIZATIONNAME = ChristianEnevoldsen;
 				TargetAttributes = {
 					2D86D84318BBDF980053D1DC = {
-						DevelopmentTeam = YR3485WD63;
+						DevelopmentTeam = LL64L3BC76;
 					};
 				};
 			};
@@ -444,6 +399,7 @@
 				2DC790F918C4ECE200CF44BC /* ABViewController.m in Sources */,
 				2DC7912118C4F9A000CF44BC /* SKTAudio.m in Sources */,
 				2DC790F818C4ECE200CF44BC /* ABAppDelegate.m in Sources */,
+				2DAB000318AB000000000003 /* ABSceneDelegate.m in Sources */,
 				2DC790FF18C4ECE200CF44BC /* ABGameScene.m in Sources */,
 				2DC7910618C4ECE200CF44BC /* ABGraphicsUtilities.m in Sources */,
 				2DC7912018C4F9A000CF44BC /* SKNode+SKTExtras.m in Sources */,
@@ -571,6 +527,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = LL64L3BC76;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Amazing Bird/Amazing Bird-Prefix.pch";
 				INFOPLIST_FILE = "Amazing Bird/Amazing Bird-Info.plist";
@@ -579,7 +536,8 @@
 					"$(SRCROOT)/**",
 					"$(inherited)",
 				);
-				OTHER_LDFLAGS = "-ObjC";
+	
+				PRODUCT_BUNDLE_IDENTIFIER = "com.enevoldsen.Amazing-Bird-1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -593,6 +551,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = LL64L3BC76;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Amazing Bird/Amazing Bird-Prefix.pch";
 				INFOPLIST_FILE = "Amazing Bird/Amazing Bird-Info.plist";
@@ -601,7 +560,8 @@
 					"$(SRCROOT)/**",
 					"$(inherited)",
 				);
-				OTHER_LDFLAGS = "-ObjC";
+	
+				PRODUCT_BUNDLE_IDENTIFIER = "com.enevoldsen.Amazing-Bird-1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";

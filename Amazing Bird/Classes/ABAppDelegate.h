@@ -10,6 +10,7 @@
 
 @interface ABAppDelegate : UIResponder <UIApplicationDelegate>
 
-@property (strong, nonatomic) UIWindow *window;
+- (void)save;
+- (void)load;
 
 @end

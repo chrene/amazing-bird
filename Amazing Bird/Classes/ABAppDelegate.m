@@ -17,14 +17,13 @@
 	return YES;
 }
 
-- (void)applicationDidEnterBackground:(UIApplication *)application
+- (UISceneConfiguration *)application:(UIApplication *)application configurationForConnectingSceneSession:(UISceneSession *)connectingSceneSession options:(UISceneConnectionOptions *)options
 {
-	[self save];
+	return [UISceneConfiguration configurationWithName:@"Default Configuration" sessionRole:connectingSceneSession.role];
 }
 
-- (void)applicationWillEnterForeground:(UIApplication *)application
+- (void)application:(UIApplication *)application didDiscardSceneSessions:(NSSet<UISceneSession *> *)sceneSessions
 {
-	[self load];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application
