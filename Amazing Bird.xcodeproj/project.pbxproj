@@ -51,6 +51,7 @@
 		2DDBBF9D18CB81A70077CBFD /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DDBBF9C18CB81A70077CBFD /* StoreKit.framework */; };
 		2DDBBF9F18CB81AF0077CBFD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DDBBF9E18CB81AF0077CBFD /* SystemConfiguration.framework */; };
 		2DDBBFA218CBB1DA0077CBFD /* ABStarField.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DDBBFA118CBB1DA0077CBFD /* ABStarField.m */; };
+		AFB857AE2F6C7F6500689896 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFB857AC2F6C7F6500689896 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -133,6 +134,7 @@
 		2DDBBF9E18CB81AF0077CBFD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		2DDBBFA018CBB1DA0077CBFD /* ABStarField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABStarField.h; sourceTree = "<group>"; };
 		2DDBBFA118CBB1DA0077CBFD /* ABStarField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABStarField.m; sourceTree = "<group>"; };
+		AFB857AD2F6C7F6500689896 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Amazing Bird/Base.lproj/LaunchScreen.storyboard"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +202,7 @@
 				2D87152718CBC3E900BD1961 /* AdMob */,
 				2DC790D118C4ECE200CF44BC /* Classes */,
 				2D86D85B18BBDF980053D1DC /* Main_iPhone.storyboard */,
+				AFB857AC2F6C7F6500689896 /* LaunchScreen.storyboard */,
 				2D3B620418CE839100BFEC6A /* Main_iPad.storyboard */,
 				2D86D86918BBDF980053D1DC /* Images.xcassets */,
 				2D86D85018BBDF980053D1DC /* Supporting Files */,
@@ -415,6 +418,7 @@
 				2D2EDBF318CEB94D0091C21F /* ScoreFont@2x~ipad.xml in Resources */,
 				2DC790FA18C4ECE200CF44BC /* bird_anim.atlas in Resources */,
 				2D2EDBF418CEB94D0091C21F /* ScoreFont@2x~iphone.xml in Resources */,
+				AFB857AE2F6C7F6500689896 /* LaunchScreen.storyboard in Resources */,
 				2D2EDBF218CEB94D0091C21F /* ScoreFont.xml in Resources */,
 				2D2EDBF518CEB94D0091C21F /* ScoreFont~ipad.xml in Resources */,
 			);
@@ -476,6 +480,14 @@
 				2D86D85C18BBDF980053D1DC /* Base */,
 			);
 			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		AFB857AC2F6C7F6500689896 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFB857AD2F6C7F6500689896 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
