@@ -63,6 +63,7 @@
 		SKTextureAtlas *atlas = [SKTextureAtlas atlasNamed:@"sprites"];
 		SKSpriteNode *background = [SKSpriteNode spriteNodeWithTexture:[atlas textureNamed:@"Background"]];
 		background.position = kCenterScreen;
+		background.size = self.size;
 		[self addNode:background atWorldLayer:ABWorldLayerBackground];
 
 		// init score label
