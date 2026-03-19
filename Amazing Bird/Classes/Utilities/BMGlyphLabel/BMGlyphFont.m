@@ -11,6 +11,7 @@
 
 @interface BMGlyphFont ()
 @property (assign, nonatomic) NSInteger lineHeight;
+@property (assign, nonatomic) CGFloat fontScale;
 @property (strong, nonatomic) NSMutableDictionary *kernings;
 @property (strong, nonatomic) NSMutableDictionary *chars;
 @property (strong, nonatomic) NSMutableDictionary *charsTextures;
@@ -34,7 +35,9 @@
         self.charsTextures = [[NSMutableDictionary alloc] init];
         self.textureAtlas = [SKTextureAtlas atlasNamed:name];
 
-        NSString *fontFile = (![self isRunningOnRetinaDevice]) ? name : [NSString stringWithFormat:@"%@@2x", name];
+        BOOL retina = [UIScreen mainScreen].scale >= 2.0;
+        self.fontScale = retina ? 2.0 : 1.0;
+        NSString *fontFile = retina ? [NSString stringWithFormat:@"%@@2x", name] : name;
         NSString* path = [[NSBundle mainBundle] pathForResource:fontFile ofType: @"xml"];
         NSData* data = [NSData dataWithContentsOfFile:path];
         NSXMLParser* parser = [[NSXMLParser alloc] initWithData:data];
@@ -44,11 +47,6 @@
     return self;
 }
 
-- (BOOL) isRunningOnRetinaDevice
-{
-    return ([[UIScreen mainScreen] respondsToSelector:@selector(displayLinkWithTarget:selector:)] &&
-            ([UIScreen mainScreen].scale == 2.0));
-}
 
 - (NSInteger) xAdvance:(unichar)charId
 {

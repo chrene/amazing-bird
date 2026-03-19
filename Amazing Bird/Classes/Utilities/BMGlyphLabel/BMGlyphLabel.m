@@ -167,7 +167,7 @@
     unichar lastCharId = 0;
     CGSize size = CGSizeZero;
     CGPoint pos = CGPointZero;
-    CGFloat scaleFactor = [UIScreen mainScreen].scale;
+    CGFloat scaleFactor = self.font.fontScale;
     SKSpriteNode *letter;
 
     int childCount = (int)[[self children] count];

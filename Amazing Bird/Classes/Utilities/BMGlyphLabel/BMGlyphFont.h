@@ -11,6 +11,7 @@
 @interface BMGlyphFont : NSObject <NSXMLParserDelegate>
 
 @property (assign, readonly, nonatomic) NSInteger lineHeight;
+@property (assign, readonly, nonatomic) CGFloat fontScale;
 @property (strong, readonly, nonatomic) NSMutableDictionary *kernings;
 @property (strong, readonly, nonatomic) NSMutableDictionary *chars;
 @property (strong, readonly, nonatomic) NSMutableDictionary *charsTextures;
