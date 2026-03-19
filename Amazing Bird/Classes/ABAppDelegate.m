@@ -33,37 +33,16 @@
 
 - (void)save
 {
-	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,
-														 NSUserDomainMask,
-														 YES);
-	NSString *documentPath = [paths firstObject];
-	NSString *filePath = [documentPath stringByAppendingPathComponent:@"player.dat"];
-
-	NSKeyedArchiver *encoder = [[NSKeyedArchiver alloc] initRequiringSecureCoding:NO];
-	[encoder encodeBool:[ABPlayer sharedPlayer].isPremium forKey:@"premium"];
-	[encoder encodeInt:[ABPlayer sharedPlayer].highscore forKey:@"highscore"];
-	[encoder finishEncoding];
-	[encoder.encodedData writeToFile:filePath atomically:YES];
+	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+	[defaults setInteger:[ABPlayer sharedPlayer].highscore forKey:@"highscore"];
+	[defaults setBool:[ABPlayer sharedPlayer].isPremium forKey:@"premium"];
 }
 
 - (void)load
 {
-	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,
-														 NSUserDomainMask,
-														 YES);
-	NSString *documentPath = [paths firstObject];
-	NSString *filePath = [documentPath stringByAppendingPathComponent:@"player.dat"];
-	NSData *data = [NSData dataWithContentsOfFile:filePath];
-	if (data) {
-		NSError *error = nil;
-		NSKeyedUnarchiver *decoder = [[NSKeyedUnarchiver alloc] initForReadingFromData:data error:&error];
-		if (!error) {
-			decoder.requiresSecureCoding = NO;
-			[[ABPlayer sharedPlayer] setHighscore:[decoder decodeIntForKey:@"highscore"]];
-			[[ABPlayer sharedPlayer] setPremium:[decoder decodeBoolForKey:@"premium"]];
-			[decoder finishDecoding];
-		}
-	}
+	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+	[[ABPlayer sharedPlayer] setHighscore:(int)[defaults integerForKey:@"highscore"]];
+	[[ABPlayer sharedPlayer] setPremium:[defaults boolForKey:@"premium"]];
 }
 
 @end

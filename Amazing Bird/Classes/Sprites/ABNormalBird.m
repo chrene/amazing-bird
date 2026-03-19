@@ -142,15 +142,9 @@
 			self.status = ABGameCharacterStatusDead;
 		}
 	}
-
 }
 
 #pragma mark - Animations and frames
-
-- (void)animateWithFrames:(NSArray *)frames interval:(NSTimeInterval)interval withKey:(NSString *)key
-{
-	[super animateWithFrames:frames interval:interval withKey:key];
-}
 
 - (void)completedAnimationWithKey:(NSString *)animKey
 {
