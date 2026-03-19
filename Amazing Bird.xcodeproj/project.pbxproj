@@ -18,34 +18,21 @@
 		2D86D84C18BBDF980053D1DC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D86D84B18BBDF980053D1DC /* UIKit.framework */; };
 		2D86D84E18BBDF980053D1DC /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D86D84D18BBDF980053D1DC /* SpriteKit.framework */; };
 		2D86D85418BBDF980053D1DC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2D86D85218BBDF980053D1DC /* InfoPlist.strings */; };
-		2D86D85618BBDF980053D1DC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D86D85518BBDF980053D1DC /* main.m */; };
 		2D86D85D18BBDF980053D1DC /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D86D85B18BBDF980053D1DC /* Main_iPhone.storyboard */; };
 		2D86D86A18BBDF980053D1DC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D86D86918BBDF980053D1DC /* Images.xcassets */; };
-		2DAB000318AB000000000003 /* ABSceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAB000218AB000000000002 /* ABSceneDelegate.m */; };
-		2DC790F818C4ECE200CF44BC /* ABAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC790D318C4ECE200CF44BC /* ABAppDelegate.m */; };
-		2DC790F918C4ECE200CF44BC /* ABViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC790D518C4ECE200CF44BC /* ABViewController.m */; };
 		2DC790FA18C4ECE200CF44BC /* bird_anim.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 2DC790D718C4ECE200CF44BC /* bird_anim.atlas */; };
 		2DC790FE18C4ECE200CF44BC /* sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 2DC790DC18C4ECE200CF44BC /* sprites.atlas */; };
-		2DC790FF18C4ECE200CF44BC /* ABGameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC790DF18C4ECE200CF44BC /* ABGameScene.m */; };
-		2DC7910118C4ECE200CF44BC /* ABPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC790E318C4ECE200CF44BC /* ABPlayer.m */; };
-		2DC7910218C4ECE200CF44BC /* ABCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC790E618C4ECE200CF44BC /* ABCloud.m */; };
-		2DC7910318C4ECE200CF44BC /* ABGameCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC790E818C4ECE200CF44BC /* ABGameCharacter.m */; };
-		2DC7910518C4ECE200CF44BC /* ABNormalBird.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC790EC18C4ECE200CF44BC /* ABNormalBird.m */; };
-		2DC7910618C4ECE200CF44BC /* ABGraphicsUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC790EF18C4ECE200CF44BC /* ABGraphicsUtilities.m */; };
-		2DC7910718C4ECE200CF44BC /* BMGlyphFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC790F318C4ECE200CF44BC /* BMGlyphFont.m */; };
-		2DC7910818C4ECE200CF44BC /* BMGlyphLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC790F518C4ECE200CF44BC /* BMGlyphLabel.m */; };
-		2DC7910918C4ECE200CF44BC /* SKNode+enumerateRecursively.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC790F718C4ECE200CF44BC /* SKNode+enumerateRecursively.m */; };
-		2DC7911C18C4F9A000CF44BC /* SKAction+SKTExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC7910C18C4F9A000CF44BC /* SKAction+SKTExtras.m */; };
-		2DC7911D18C4F9A000CF44BC /* SKAction+SKTSpecialEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC7910E18C4F9A000CF44BC /* SKAction+SKTSpecialEffects.m */; };
-		2DC7911E18C4F9A000CF44BC /* SKEmitterNode+SKTExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC7911018C4F9A000CF44BC /* SKEmitterNode+SKTExtras.m */; };
-		2DC7911F18C4F9A000CF44BC /* SKNode+SKTDebugDraw.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC7911218C4F9A000CF44BC /* SKNode+SKTDebugDraw.m */; };
-		2DC7912018C4F9A000CF44BC /* SKNode+SKTExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC7911418C4F9A000CF44BC /* SKNode+SKTExtras.m */; };
-		2DC7912118C4F9A000CF44BC /* SKTAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC7911618C4F9A000CF44BC /* SKTAudio.m */; };
-		2DC7912218C4F9A000CF44BC /* SKTEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC7911818C4F9A000CF44BC /* SKTEffects.m */; };
-		2DC7912318C4F9A000CF44BC /* SKTTimingFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC7911A18C4F9A000CF44BC /* SKTTimingFunctions.m */; };
 		2DDBBF9518CB81840077CBFD /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DDBBF9418CB81840077CBFD /* AudioToolbox.framework */; };
 		2DDBBF9718CB818B0077CBFD /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DDBBF9618CB818B0077CBFD /* AVFoundation.framework */; };
-		2DDBBFA218CBB1DA0077CBFD /* ABStarField.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DDBBFA118CBB1DA0077CBFD /* ABStarField.m */; };
+		AF2502042F6CAB0700100C96 /* ABGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2501FE2F6CAB0700100C96 /* ABGameScene.swift */; };
+		AF2502052F6CAB0700100C96 /* ABPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2502002F6CAB0700100C96 /* ABPlayer.swift */; };
+		AF2502062F6CAB0700100C96 /* ABNormalBird.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2501FF2F6CAB0700100C96 /* ABNormalBird.swift */; };
+		AF2502072F6CAB0700100C96 /* ABGameCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2501FD2F6CAB0700100C96 /* ABGameCharacter.swift */; };
+		AF2502082F6CAB0700100C96 /* ABSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2502012F6CAB0700100C96 /* ABSceneDelegate.swift */; };
+		AF2502092F6CAB0700100C96 /* ABStarField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2502022F6CAB0700100C96 /* ABStarField.swift */; };
+		AF25020A2F6CAB0700100C96 /* ABAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2501FB2F6CAB0700100C96 /* ABAppDelegate.swift */; };
+		AF25020B2F6CAB0700100C96 /* ABViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2502032F6CAB0700100C96 /* ABViewController.swift */; };
+		AF25020C2F6CAB0700100C96 /* ABCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2501FC2F6CAB0700100C96 /* ABCloud.swift */; };
 		AFB857AE2F6C7F6500689896 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFB857AC2F6C7F6500689896 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -63,59 +50,22 @@
 		2D86D84D18BBDF980053D1DC /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 		2D86D85118BBDF980053D1DC /* Amazing Bird-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Amazing Bird-Info.plist"; sourceTree = "<group>"; };
 		2D86D85318BBDF980053D1DC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		2D86D85518BBDF980053D1DC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2D86D85718BBDF980053D1DC /* Amazing Bird-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Amazing Bird-Prefix.pch"; sourceTree = "<group>"; };
 		2D86D85C18BBDF980053D1DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		2D86D86918BBDF980053D1DC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2D86D87018BBDF990053D1DC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		2DAB000118AB000000000001 /* ABSceneDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABSceneDelegate.h; sourceTree = "<group>"; };
-		2DAB000218AB000000000002 /* ABSceneDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABSceneDelegate.m; sourceTree = "<group>"; };
-		2DC790D218C4ECE200CF44BC /* ABAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABAppDelegate.h; sourceTree = "<group>"; };
-		2DC790D318C4ECE200CF44BC /* ABAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABAppDelegate.m; sourceTree = "<group>"; };
-		2DC790D418C4ECE200CF44BC /* ABViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABViewController.h; sourceTree = "<group>"; };
-		2DC790D518C4ECE200CF44BC /* ABViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABViewController.m; sourceTree = "<group>"; };
 		2DC790D718C4ECE200CF44BC /* bird_anim.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = bird_anim.atlas; sourceTree = "<group>"; };
 		2DC790DC18C4ECE200CF44BC /* sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = sprites.atlas; sourceTree = "<group>"; };
-		2DC790DE18C4ECE200CF44BC /* ABGameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABGameScene.h; sourceTree = "<group>"; };
-		2DC790DF18C4ECE200CF44BC /* ABGameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABGameScene.m; sourceTree = "<group>"; };
-		2DC790E218C4ECE200CF44BC /* ABPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABPlayer.h; sourceTree = "<group>"; };
-		2DC790E318C4ECE200CF44BC /* ABPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABPlayer.m; sourceTree = "<group>"; };
-		2DC790E518C4ECE200CF44BC /* ABCloud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABCloud.h; sourceTree = "<group>"; };
-		2DC790E618C4ECE200CF44BC /* ABCloud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABCloud.m; sourceTree = "<group>"; };
-		2DC790E718C4ECE200CF44BC /* ABGameCharacter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABGameCharacter.h; sourceTree = "<group>"; };
-		2DC790E818C4ECE200CF44BC /* ABGameCharacter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABGameCharacter.m; sourceTree = "<group>"; };
-		2DC790EB18C4ECE200CF44BC /* ABNormalBird.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABNormalBird.h; sourceTree = "<group>"; };
-		2DC790EC18C4ECE200CF44BC /* ABNormalBird.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABNormalBird.m; sourceTree = "<group>"; };
-		2DC790EE18C4ECE200CF44BC /* ABGraphicsUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABGraphicsUtilities.h; sourceTree = "<group>"; };
-		2DC790EF18C4ECE200CF44BC /* ABGraphicsUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABGraphicsUtilities.m; sourceTree = "<group>"; };
-		2DC790F018C4ECE200CF44BC /* ABRandom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABRandom.h; sourceTree = "<group>"; };
-		2DC790F218C4ECE200CF44BC /* BMGlyphFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMGlyphFont.h; sourceTree = "<group>"; };
-		2DC790F318C4ECE200CF44BC /* BMGlyphFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMGlyphFont.m; sourceTree = "<group>"; };
-		2DC790F418C4ECE200CF44BC /* BMGlyphLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMGlyphLabel.h; sourceTree = "<group>"; };
-		2DC790F518C4ECE200CF44BC /* BMGlyphLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMGlyphLabel.m; sourceTree = "<group>"; };
-		2DC790F618C4ECE200CF44BC /* SKNode+enumerateRecursively.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKNode+enumerateRecursively.h"; sourceTree = "<group>"; };
-		2DC790F718C4ECE200CF44BC /* SKNode+enumerateRecursively.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKNode+enumerateRecursively.m"; sourceTree = "<group>"; };
-		2DC7910B18C4F9A000CF44BC /* SKAction+SKTExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKAction+SKTExtras.h"; sourceTree = "<group>"; };
-		2DC7910C18C4F9A000CF44BC /* SKAction+SKTExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKAction+SKTExtras.m"; sourceTree = "<group>"; };
-		2DC7910D18C4F9A000CF44BC /* SKAction+SKTSpecialEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKAction+SKTSpecialEffects.h"; sourceTree = "<group>"; };
-		2DC7910E18C4F9A000CF44BC /* SKAction+SKTSpecialEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKAction+SKTSpecialEffects.m"; sourceTree = "<group>"; };
-		2DC7910F18C4F9A000CF44BC /* SKEmitterNode+SKTExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKEmitterNode+SKTExtras.h"; sourceTree = "<group>"; };
-		2DC7911018C4F9A000CF44BC /* SKEmitterNode+SKTExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKEmitterNode+SKTExtras.m"; sourceTree = "<group>"; };
-		2DC7911118C4F9A000CF44BC /* SKNode+SKTDebugDraw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKNode+SKTDebugDraw.h"; sourceTree = "<group>"; };
-		2DC7911218C4F9A000CF44BC /* SKNode+SKTDebugDraw.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKNode+SKTDebugDraw.m"; sourceTree = "<group>"; };
-		2DC7911318C4F9A000CF44BC /* SKNode+SKTExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKNode+SKTExtras.h"; sourceTree = "<group>"; };
-		2DC7911418C4F9A000CF44BC /* SKNode+SKTExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKNode+SKTExtras.m"; sourceTree = "<group>"; };
-		2DC7911518C4F9A000CF44BC /* SKTAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTAudio.h; sourceTree = "<group>"; };
-		2DC7911618C4F9A000CF44BC /* SKTAudio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTAudio.m; sourceTree = "<group>"; };
-		2DC7911718C4F9A000CF44BC /* SKTEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTEffects.h; sourceTree = "<group>"; };
-		2DC7911818C4F9A000CF44BC /* SKTEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTEffects.m; sourceTree = "<group>"; };
-		2DC7911918C4F9A000CF44BC /* SKTTimingFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTTimingFunctions.h; sourceTree = "<group>"; };
-		2DC7911A18C4F9A000CF44BC /* SKTTimingFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTTimingFunctions.m; sourceTree = "<group>"; };
-		2DC7911B18C4F9A000CF44BC /* SKTUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTUtils.h; sourceTree = "<group>"; };
 		2DDBBF9418CB81840077CBFD /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		2DDBBF9618CB818B0077CBFD /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		2DDBBFA018CBB1DA0077CBFD /* ABStarField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABStarField.h; sourceTree = "<group>"; };
-		2DDBBFA118CBB1DA0077CBFD /* ABStarField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABStarField.m; sourceTree = "<group>"; };
+		AF2501FB2F6CAB0700100C96 /* ABAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ABAppDelegate.swift; sourceTree = "<group>"; };
+		AF2501FC2F6CAB0700100C96 /* ABCloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ABCloud.swift; path = Sprites/ABCloud.swift; sourceTree = "<group>"; };
+		AF2501FD2F6CAB0700100C96 /* ABGameCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ABGameCharacter.swift; path = Sprites/ABGameCharacter.swift; sourceTree = "<group>"; };
+		AF2501FE2F6CAB0700100C96 /* ABGameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ABGameScene.swift; path = Scene/ABGameScene.swift; sourceTree = "<group>"; };
+		AF2501FF2F6CAB0700100C96 /* ABNormalBird.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ABNormalBird.swift; path = Sprites/ABNormalBird.swift; sourceTree = "<group>"; };
+		AF2502002F6CAB0700100C96 /* ABPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ABPlayer.swift; path = Scene/ABPlayer.swift; sourceTree = "<group>"; };
+		AF2502012F6CAB0700100C96 /* ABSceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ABSceneDelegate.swift; sourceTree = "<group>"; };
+		AF2502022F6CAB0700100C96 /* ABStarField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ABStarField.swift; path = Scene/ABStarField.swift; sourceTree = "<group>"; };
+		AF2502032F6CAB0700100C96 /* ABViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ABViewController.swift; sourceTree = "<group>"; };
 		AFB857AD2F6C7F6500689896 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Amazing Bird/Base.lproj/LaunchScreen.storyboard"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -185,8 +135,6 @@
 			children = (
 				2D86D85118BBDF980053D1DC /* Amazing Bird-Info.plist */,
 				2D86D85218BBDF980053D1DC /* InfoPlist.strings */,
-				2D86D85518BBDF980053D1DC /* main.m */,
-				2D86D85718BBDF980053D1DC /* Amazing Bird-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -194,16 +142,16 @@
 		2DC790D118C4ECE200CF44BC /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				2DC790D218C4ECE200CF44BC /* ABAppDelegate.h */,
-				2DC790D318C4ECE200CF44BC /* ABAppDelegate.m */,
-				2DAB000118AB000000000001 /* ABSceneDelegate.h */,
-				2DAB000218AB000000000002 /* ABSceneDelegate.m */,
-				2DC790D418C4ECE200CF44BC /* ABViewController.h */,
-				2DC790D518C4ECE200CF44BC /* ABViewController.m */,
+				AF2501FB2F6CAB0700100C96 /* ABAppDelegate.swift */,
+				AF2501FC2F6CAB0700100C96 /* ABCloud.swift */,
+				AF2501FD2F6CAB0700100C96 /* ABGameCharacter.swift */,
+				AF2501FE2F6CAB0700100C96 /* ABGameScene.swift */,
+				AF2501FF2F6CAB0700100C96 /* ABNormalBird.swift */,
+				AF2502002F6CAB0700100C96 /* ABPlayer.swift */,
+				AF2502012F6CAB0700100C96 /* ABSceneDelegate.swift */,
+				AF2502022F6CAB0700100C96 /* ABStarField.swift */,
+				AF2502032F6CAB0700100C96 /* ABViewController.swift */,
 				2DC790D618C4ECE200CF44BC /* Assets */,
-				2DC790DD18C4ECE200CF44BC /* Scene */,
-				2DC790E418C4ECE200CF44BC /* Sprites */,
-				2DC790ED18C4ECE200CF44BC /* Utilities */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -228,81 +176,6 @@
 				2D2EDBF018CEB94D0091C21F /* ScoreFont~ipad.xml */,
 			);
 			path = Fonts;
-			sourceTree = "<group>";
-		};
-		2DC790DD18C4ECE200CF44BC /* Scene */ = {
-			isa = PBXGroup;
-			children = (
-				2DC790DE18C4ECE200CF44BC /* ABGameScene.h */,
-				2DC790DF18C4ECE200CF44BC /* ABGameScene.m */,
-				2DC790E218C4ECE200CF44BC /* ABPlayer.h */,
-				2DC790E318C4ECE200CF44BC /* ABPlayer.m */,
-				2DDBBFA018CBB1DA0077CBFD /* ABStarField.h */,
-				2DDBBFA118CBB1DA0077CBFD /* ABStarField.m */,
-			);
-			path = Scene;
-			sourceTree = "<group>";
-		};
-		2DC790E418C4ECE200CF44BC /* Sprites */ = {
-			isa = PBXGroup;
-			children = (
-				2DC790E518C4ECE200CF44BC /* ABCloud.h */,
-				2DC790E618C4ECE200CF44BC /* ABCloud.m */,
-				2DC790E718C4ECE200CF44BC /* ABGameCharacter.h */,
-				2DC790E818C4ECE200CF44BC /* ABGameCharacter.m */,
-				2DC790EB18C4ECE200CF44BC /* ABNormalBird.h */,
-				2DC790EC18C4ECE200CF44BC /* ABNormalBird.m */,
-			);
-			path = Sprites;
-			sourceTree = "<group>";
-		};
-		2DC790ED18C4ECE200CF44BC /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-				2DC7910A18C4F9A000CF44BC /* SKTUtils */,
-				2DC790EE18C4ECE200CF44BC /* ABGraphicsUtilities.h */,
-				2DC790EF18C4ECE200CF44BC /* ABGraphicsUtilities.m */,
-				2DC790F018C4ECE200CF44BC /* ABRandom.h */,
-				2DC790F118C4ECE200CF44BC /* BMGlyphLabel */,
-				2DC790F618C4ECE200CF44BC /* SKNode+enumerateRecursively.h */,
-				2DC790F718C4ECE200CF44BC /* SKNode+enumerateRecursively.m */,
-			);
-			path = Utilities;
-			sourceTree = "<group>";
-		};
-		2DC790F118C4ECE200CF44BC /* BMGlyphLabel */ = {
-			isa = PBXGroup;
-			children = (
-				2DC790F218C4ECE200CF44BC /* BMGlyphFont.h */,
-				2DC790F318C4ECE200CF44BC /* BMGlyphFont.m */,
-				2DC790F418C4ECE200CF44BC /* BMGlyphLabel.h */,
-				2DC790F518C4ECE200CF44BC /* BMGlyphLabel.m */,
-			);
-			path = BMGlyphLabel;
-			sourceTree = "<group>";
-		};
-		2DC7910A18C4F9A000CF44BC /* SKTUtils */ = {
-			isa = PBXGroup;
-			children = (
-				2DC7910B18C4F9A000CF44BC /* SKAction+SKTExtras.h */,
-				2DC7910C18C4F9A000CF44BC /* SKAction+SKTExtras.m */,
-				2DC7910D18C4F9A000CF44BC /* SKAction+SKTSpecialEffects.h */,
-				2DC7910E18C4F9A000CF44BC /* SKAction+SKTSpecialEffects.m */,
-				2DC7910F18C4F9A000CF44BC /* SKEmitterNode+SKTExtras.h */,
-				2DC7911018C4F9A000CF44BC /* SKEmitterNode+SKTExtras.m */,
-				2DC7911118C4F9A000CF44BC /* SKNode+SKTDebugDraw.h */,
-				2DC7911218C4F9A000CF44BC /* SKNode+SKTDebugDraw.m */,
-				2DC7911318C4F9A000CF44BC /* SKNode+SKTExtras.h */,
-				2DC7911418C4F9A000CF44BC /* SKNode+SKTExtras.m */,
-				2DC7911518C4F9A000CF44BC /* SKTAudio.h */,
-				2DC7911618C4F9A000CF44BC /* SKTAudio.m */,
-				2DC7911718C4F9A000CF44BC /* SKTEffects.h */,
-				2DC7911818C4F9A000CF44BC /* SKTEffects.m */,
-				2DC7911918C4F9A000CF44BC /* SKTTimingFunctions.h */,
-				2DC7911A18C4F9A000CF44BC /* SKTTimingFunctions.m */,
-				2DC7911B18C4F9A000CF44BC /* SKTUtils.h */,
-			);
-			path = SKTUtils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -337,6 +210,7 @@
 				TargetAttributes = {
 					2D86D84318BBDF980053D1DC = {
 						DevelopmentTeam = LL64L3BC76;
+						LastSwiftMigration = 2630;
 					};
 				};
 			};
@@ -386,28 +260,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DC7911F18C4F9A000CF44BC /* SKNode+SKTDebugDraw.m in Sources */,
-				2DC7910918C4ECE200CF44BC /* SKNode+enumerateRecursively.m in Sources */,
-				2DC7912218C4F9A000CF44BC /* SKTEffects.m in Sources */,
-				2DC7911E18C4F9A000CF44BC /* SKEmitterNode+SKTExtras.m in Sources */,
-				2DC7911D18C4F9A000CF44BC /* SKAction+SKTSpecialEffects.m in Sources */,
-				2DDBBFA218CBB1DA0077CBFD /* ABStarField.m in Sources */,
-				2DC7910818C4ECE200CF44BC /* BMGlyphLabel.m in Sources */,
-				2DC7910218C4ECE200CF44BC /* ABCloud.m in Sources */,
-				2D86D85618BBDF980053D1DC /* main.m in Sources */,
-				2DC7910118C4ECE200CF44BC /* ABPlayer.m in Sources */,
-				2DC790F918C4ECE200CF44BC /* ABViewController.m in Sources */,
-				2DC7912118C4F9A000CF44BC /* SKTAudio.m in Sources */,
-				2DC790F818C4ECE200CF44BC /* ABAppDelegate.m in Sources */,
-				2DAB000318AB000000000003 /* ABSceneDelegate.m in Sources */,
-				2DC790FF18C4ECE200CF44BC /* ABGameScene.m in Sources */,
-				2DC7910618C4ECE200CF44BC /* ABGraphicsUtilities.m in Sources */,
-				2DC7912018C4F9A000CF44BC /* SKNode+SKTExtras.m in Sources */,
-				2DC7910518C4ECE200CF44BC /* ABNormalBird.m in Sources */,
-				2DC7912318C4F9A000CF44BC /* SKTTimingFunctions.m in Sources */,
-				2DC7910318C4ECE200CF44BC /* ABGameCharacter.m in Sources */,
-				2DC7911C18C4F9A000CF44BC /* SKAction+SKTExtras.m in Sources */,
-				2DC7910718C4ECE200CF44BC /* BMGlyphFont.m in Sources */,
+				AF2502042F6CAB0700100C96 /* ABGameScene.swift in Sources */,
+				AF2502052F6CAB0700100C96 /* ABPlayer.swift in Sources */,
+				AF2502062F6CAB0700100C96 /* ABNormalBird.swift in Sources */,
+				AF2502072F6CAB0700100C96 /* ABGameCharacter.swift in Sources */,
+				AF2502082F6CAB0700100C96 /* ABSceneDelegate.swift in Sources */,
+				AF2502092F6CAB0700100C96 /* ABStarField.swift in Sources */,
+				AF25020A2F6CAB0700100C96 /* ABAppDelegate.swift in Sources */,
+				AF25020B2F6CAB0700100C96 /* ABViewController.swift in Sources */,
+				AF25020C2F6CAB0700100C96 /* ABCloud.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -526,20 +387,22 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = LL64L3BC76;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Amazing Bird/Amazing Bird-Prefix.pch";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "Amazing Bird/Amazing Bird-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LIBRARY_SEARCH_PATHS = (
 					"$(SRCROOT)/**",
 					"$(inherited)",
 				);
-	
 				PRODUCT_BUNDLE_IDENTIFIER = "com.enevoldsen.Amazing-Bird-1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -550,20 +413,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = LL64L3BC76;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Amazing Bird/Amazing Bird-Prefix.pch";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "Amazing Bird/Amazing Bird-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LIBRARY_SEARCH_PATHS = (
 					"$(SRCROOT)/**",
 					"$(inherited)",
 				);
-	
 				PRODUCT_BUNDLE_IDENTIFIER = "com.enevoldsen.Amazing-Bird-1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};

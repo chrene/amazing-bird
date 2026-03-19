@@ -38,7 +38,7 @@
 					<key>UISceneConfigurationName</key>
 					<string>Default Configuration</string>
 					<key>UISceneDelegateClassName</key>
-					<string>ABSceneDelegate</string>
+					<string>Amazing_Bird.ABSceneDelegate</string>
 				</dict>
 			</array>
 		</dict>

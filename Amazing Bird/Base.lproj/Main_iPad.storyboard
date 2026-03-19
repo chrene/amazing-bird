@@ -7,7 +7,7 @@
         <!--View Controller-->
         <scene sceneID="cfv-pE-SpY">
             <objects>
-                <viewController id="mer-kb-OLa" customClass="ABViewController" sceneMemberID="viewController">
+                <viewController id="mer-kb-OLa" customClass="ABViewController" customModule="Amazing_Bird" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="50M-jF-t1V"/>
                         <viewControllerLayoutGuide type="bottom" id="Eep-KO-gpq"/>
