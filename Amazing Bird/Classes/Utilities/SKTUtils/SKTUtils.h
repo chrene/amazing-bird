@@ -21,25 +21,9 @@
  */
 
 #import <CoreGraphics/CoreGraphics.h>
-#import <GLKit/GLKMath.h>
 #import <SpriteKit/SpriteKit.h>
 
 #define SKT_INLINE static __inline__
-
-/**
- * Converts a CGPoint into a GLKVector2 so you can use it with the GLKMath
- * functions from GL Kit.
- */
-SKT_INLINE GLKVector2 GLKVector2FromCGPoint(CGPoint point) {
-  return GLKVector2Make(point.x, point.y);
-}
-
-/**
- * Converts a GLKVector2 into a CGPoint.
- */
-SKT_INLINE CGPoint CGPointFromGLKVector2(GLKVector2 vector) {
-  return CGPointMake(vector.x, vector.y);
-}
 
 /**
  * Converts a CGPoint into a CGVector.
@@ -95,7 +79,7 @@ SKT_INLINE CGPoint CGPointDivide(CGPoint point1, CGPoint point2) {
  * returns the result as a new CGPoint.
  */
 SKT_INLINE CGPoint CGPointMultiplyScalar(CGPoint point, CGFloat value) {
-  return CGPointFromGLKVector2(GLKVector2MultiplyScalar(GLKVector2FromCGPoint(point), value));
+  return CGPointMake(point.x * value, point.y * value);
 }
 
 /**
@@ -103,14 +87,14 @@ SKT_INLINE CGPoint CGPointMultiplyScalar(CGPoint point, CGFloat value) {
  * the result as a new CGPoint.
  */
 SKT_INLINE CGPoint CGPointDivideScalar(CGPoint point, CGFloat value) {
-  return CGPointFromGLKVector2(GLKVector2DivideScalar(GLKVector2FromCGPoint(point), value));
+  return CGPointMake(point.x / value, point.y / value);
 }
 
 /**
  * Returns the length (magnitude) of the vector described by a CGPoint.
  */
 SKT_INLINE CGFloat CGPointLength(CGPoint point) {
-  return GLKVector2Length(GLKVector2FromCGPoint(point));
+  return (CGFloat)sqrt(point.x * point.x + point.y * point.y);
 }
 
 /**
@@ -118,7 +102,7 @@ SKT_INLINE CGFloat CGPointLength(CGPoint point) {
  * result as a new CGPoint.
  */
 SKT_INLINE CGPoint CGPointNormalize(CGPoint point) {
-  return CGPointFromGLKVector2(GLKVector2Normalize(GLKVector2FromCGPoint(point)));
+  return CGPointDivideScalar(point, CGPointLength(point));
 }
 
 /**

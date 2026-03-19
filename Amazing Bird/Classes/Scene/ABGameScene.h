@@ -18,20 +18,10 @@ typedef enum : uint8_t {
 	ABWorldLayerCount
 } ABWorldLayer;
 
-@protocol ABGameSceneDelegate <NSObject>
-@optional
-- (void)gameDidStart;
-- (void)gameDidEnd;
-@end
-
-
-
 @interface ABGameScene : SKScene <SKPhysicsContactDelegate>
 
 @property (nonatomic, assign, readonly) BOOL gameStarted;
 
 - (void)addNode:(SKNode *)node atWorldLayer:(ABWorldLayer)worldLayer;
-
-@property (nonatomic, weak) id<ABGameSceneDelegate> delegate;
 
 @end

@@ -39,15 +39,11 @@
 	NSString *documentPath = [paths firstObject];
 	NSString *filePath = [documentPath stringByAppendingPathComponent:@"player.dat"];
 
-	NSMutableData *data = [[NSMutableData alloc] init];
-	NSKeyedArchiver *encoder = [[NSKeyedArchiver alloc] initForWritingWithMutableData:data];
-
+	NSKeyedArchiver *encoder = [[NSKeyedArchiver alloc] initRequiringSecureCoding:NO];
 	[encoder encodeBool:[ABPlayer sharedPlayer].isPremium forKey:@"premium"];
 	[encoder encodeInt:[ABPlayer sharedPlayer].highscore forKey:@"highscore"];
-
 	[encoder finishEncoding];
-	[data writeToFile:filePath atomically:YES];
-
+	[encoder.encodedData writeToFile:filePath atomically:YES];
 }
 
 - (void)load
@@ -59,12 +55,14 @@
 	NSString *filePath = [documentPath stringByAppendingPathComponent:@"player.dat"];
 	NSData *data = [NSData dataWithContentsOfFile:filePath];
 	if (data) {
-		NSKeyedUnarchiver *decoder = [[NSKeyedUnarchiver alloc] initForReadingWithData:data];
-		[[ABPlayer sharedPlayer] setHighscore:[decoder decodeIntForKey:@"highscore"]];
-		[[ABPlayer sharedPlayer] setPremium:[decoder decodeBoolForKey:@"premium"]];
-
-		[decoder finishDecoding];
-
+		NSError *error = nil;
+		NSKeyedUnarchiver *decoder = [[NSKeyedUnarchiver alloc] initForReadingFromData:data error:&error];
+		if (!error) {
+			decoder.requiresSecureCoding = NO;
+			[[ABPlayer sharedPlayer] setHighscore:[decoder decodeIntForKey:@"highscore"]];
+			[[ABPlayer sharedPlayer] setPremium:[decoder decodeBoolForKey:@"premium"]];
+			[decoder finishDecoding];
+		}
 	}
 }
 

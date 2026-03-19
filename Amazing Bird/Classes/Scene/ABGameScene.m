@@ -99,14 +99,19 @@
 		_tapToStartLabel = [BMGlyphLabel labelWithText:@"Tap To Fly" font:[BMGlyphFont fontWithName:@"ScoreFont"]];
 		_tapToStartLabel.position = CGPointMake(size.width/2, size.height * .65);
 		[self addNode:_tapToStartLabel atWorldLayer:ABWorldLayerForeground];
-		id blink = [SKAction sequence:@[[SKAction waitForDuration:.5],
-										[SKAction fadeAlphaTo:0 duration:0.15],
-										[SKAction waitForDuration:.5],
-										[SKAction fadeAlphaTo:1.0 duration:.15]]];
-		[_tapToStartLabel runAction:[SKAction repeatActionForever:blink]];
+		[_tapToStartLabel runAction:[self tapToStartBlinkAction]];
 
 	}
     return self;
+}
+
+- (SKAction *)tapToStartBlinkAction
+{
+	id blink = [SKAction sequence:@[[SKAction waitForDuration:.5],
+									[SKAction fadeAlphaTo:0 duration:0.15],
+									[SKAction waitForDuration:.5],
+									[SKAction fadeAlphaTo:1.0 duration:.15]]];
+	return [SKAction repeatActionForever:blink];
 }
 
 #pragma mark - Touch Handling
@@ -126,9 +131,6 @@
 	[_tapToStartLabel removeAllActions];
 	[_tapToStartLabel runAction:[SKAction fadeAlphaTo:0 duration:.5]];
 	_gameStarted  = YES;
-	if ([self.delegate respondsToSelector:@selector(gameDidStart)]) {
-		[self.delegate gameDidStart];
-	}
 	_player.score = 0;
 	_highscoreLabel.hidden = YES;
 	SKTEffect *moveToEffect = [SKTMoveEffect effectWithNode:_scoreLabel
@@ -143,14 +145,7 @@
 - (void)endGame
 {
     	_gameStarted = NO;
-	id blink = [SKAction sequence:@[[SKAction waitForDuration:.5],
-									[SKAction fadeAlphaTo:0 duration:0.15],
-									[SKAction waitForDuration:.5],
-									[SKAction fadeAlphaTo:1.0 duration:.15]]];
-	[_tapToStartLabel runAction:[SKAction repeatActionForever:blink]];
-	if ([self.delegate respondsToSelector:@selector(gameDidEnd)]) {
-		[self.delegate gameDidEnd];
-	}
+	[_tapToStartLabel runAction:[self tapToStartBlinkAction]];
 	[self prepareForDeath];
 	_endingGame = NO;
 	_highscoreLabel.hidden = NO;
@@ -220,9 +215,7 @@
 					_playerCharacter.position.x - _playerCharacter.size.width/2;
 					if (passedPlayer) {
 						[cloud setPassedPlayerCharacter:YES];
-                        if (_gameStarted) {
-                                [ABPlayer sharedPlayer].score += 1;
-                        }
+						[ABPlayer sharedPlayer].score += 1;
 					}
 				}
 			}

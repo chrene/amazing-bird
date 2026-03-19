@@ -13,8 +13,7 @@
 
 typedef enum : uint8_t {
 	ABColliderTypeBird = 1,
-	ABColliderTypeCloud = 2,
-	ABColliderTypeLifeCloud = 4
+	ABColliderTypeCloud = 2
 } ABColliderType;
 
 typedef enum : uint8_t {
@@ -24,8 +23,8 @@ typedef enum : uint8_t {
 	ABGameCharacterStatusReviving = 1 << 4,
 	ABGameCharacterStatusMoving = 1 << 5,
 	ABGameCharacterStatusParalyzed = ABGameCharacterStatusDying
-									& ABGameCharacterStatusDead
-									& ABGameCharacterStatusReviving
+									| ABGameCharacterStatusDead
+									| ABGameCharacterStatusReviving
 } ABGameCharacterStatus;
 
 @interface ABGameCharacter : SKSpriteNode

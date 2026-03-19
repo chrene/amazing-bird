@@ -15,7 +15,6 @@
 
 @interface ABNormalBird()
 @property (nonatomic, weak) ABPlayer *player;
-@property (nonatomic) CGFloat velocity;
 @end
 
 @implementation ABNormalBird
@@ -90,7 +89,6 @@
 {
 	if (![self paralyzed]) {
 		self.status = ABGameCharacterStatusMoving;
-		self.velocity = self.movementSpeed;
 		self.physicsBody.dynamic = YES;
 		self.physicsBody.velocity = CGVectorMake(0, 0);
         if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
@@ -111,7 +109,7 @@
 
 - (void)reset {
 	self.physicsBody.categoryBitMask = ABColliderTypeBird;
-	self.physicsBody.contactTestBitMask = ABColliderTypeLifeCloud;
+	self.physicsBody.contactTestBitMask = ABColliderTypeCloud;
 	self.physicsBody.collisionBitMask = ABColliderTypeCloud;
 	self.physicsBody.allowsRotation = YES;
 }
@@ -152,9 +150,6 @@
 - (void)animateWithFrames:(NSArray *)frames interval:(NSTimeInterval)interval withKey:(NSString *)key
 {
 	[super animateWithFrames:frames interval:interval withKey:key];
-	if (![key isEqualToString:kAnimIdleKey]) {
-		//[self removeActionForKey:@"idleMovementKey"];
-	}
 }
 
 - (void)completedAnimationWithKey:(NSString *)animKey
@@ -173,9 +168,6 @@
 }
 
 static NSArray *sharedBirdAnimFrames = nil;
-- (NSArray *)birdAnimFrames {
-	return sharedBirdAnimFrames;
-}
 
 - (void)addToScene:(ABGameScene *)scene
 {

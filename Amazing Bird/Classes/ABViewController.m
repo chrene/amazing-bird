@@ -41,9 +41,10 @@
 
 - (NSUInteger)supportedInterfaceOrientations
 {
-	if (_runningScene) {
-		if (_runningScene.gameStarted) {
-			return [[UIApplication sharedApplication] statusBarOrientation];
+	if (_runningScene && _runningScene.gameStarted) {
+		UIWindowScene *windowScene = self.view.window.windowScene;
+		if (windowScene) {
+			return 1 << windowScene.interfaceOrientation;
 		}
 	}
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {

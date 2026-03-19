@@ -12,13 +12,14 @@
 @implementation ABStarField {
 	SKSpriteNode *starField1;
 	SKSpriteNode *starField2;
+	NSTimeInterval _scrollInterval;
 }
 
 - (instancetype)initWithSize:(CGSize)size
 {
     self = [super init];
-	self.size = size;
     if (self) {
+		self.size = size;
 		starField1 = [self starField];
 		starField2 = [self starField];
 		starField1.position = CGPointMake(0, 0);
@@ -46,12 +47,11 @@
 	return starField;
 }
 
-static NSTimeInterval interval;
 - (void)update:(NSTimeInterval)delta {
-	interval += delta;
+	_scrollInterval += delta;
     CGFloat dx = [UIScreen mainScreen].scale * .5;
-	if (interval > .03) {
-		interval = 0;
+	if (_scrollInterval > .03) {
+		_scrollInterval = 0;
 		starField1.position = CGPointMake(starField1.position.x - dx, starField1.position.y);
 		starField2.position = CGPointMake(starField2.position.x - dx, starField2.position.y);
 	}

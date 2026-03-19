@@ -10,7 +10,9 @@
 #import "ABGameScene.h"
 #import "ABNormalBird.h"
 
-@implementation ABCloud
+@implementation ABCloud {
+	BOOL _collidedWithCloud;
+}
 
 - (instancetype)initAtPosition:(CGPoint)position
 {
@@ -62,7 +64,7 @@
 - (void)reset
 {
 	[super reset];
-	collidedWithCloud = NO;
+	_collidedWithCloud = NO;
 	_passedPlayerCharacter = NO;
 }
 
@@ -88,16 +90,15 @@
 	}
 }
 
-static BOOL collidedWithCloud = NO;
 - (void)collideWith:(SKPhysicsBody *)other
 {
 	if (other.categoryBitMask == ABColliderTypeBird) {
 		ABNormalBird *bird = (ABNormalBird *)other.node;
 		[bird applyDamage:1];
 	} else if ( other.categoryBitMask == ABColliderTypeCloud ) {
-		if (!collidedWithCloud) {
+		if (!_collidedWithCloud) {
 			[self runAction:[SKAction fadeAlphaTo:abRand(.3, .9) duration:1]];
-			collidedWithCloud = YES;
+			_collidedWithCloud = YES;
 		}
 	}
 }
@@ -120,8 +121,5 @@ static BOOL collidedWithCloud = NO;
 }
 
 static SKTexture *sharedCloudTexture = nil;
-- (SKTexture *)cloudTexture {
-	return sharedCloudTexture;
-}
 
 @end
